@@ -4,17 +4,17 @@
 
 const lista_imagenes = [
 
-    {file: "./img/mattura/mattura-mockup.png", descripcion: "mattura" },
+    {file: "./img/mockups/mattura-mockup.png", descripcion: "mattura" },
     
-    {file: "./img/rutea/rutea-mockup.png", descripcion: "unavioska" },
+    {file: "./img/mockups/rutea-mockup.png", descripcion: "unavioska" },
     
-    {file: "./img/rutea/rutea-mockup.png", descripcion: "rutea" },
+    {file: "./img/mockups/rutea-mockup.png", descripcion: "rutea" },
     
-    {file: "img/mattura/mattura-mockup.png", descripcion: "music" },
+    {file: "img/mockups/mattura-mockup.png", descripcion: "music" },
     
-    {file: "./img/cocos/cocos-mockup.png", descripcion: "cocos" },
+    {file: "./img/mockups/cocos-mockup.png", descripcion: "cocos" },
     
-    {file: "./img/giftopia/gifto-mockup.png", descripcion: "giftopia" },
+    {file: "./img/mockups/gifto-mockup.png", descripcion: "giftopia" },
     
     
     ];
@@ -61,7 +61,7 @@ const lista_imagenes = [
     
     function moverSlider(){
     
-        offset -= speedMobile; //mueve hacia arriba 
+        offset -= speed; //mueve hacia arriba 
         if (offset <= -heigthImagen*lista_imagenes.length) {
             offset = 0
         }
@@ -81,77 +81,77 @@ const lista_imagenes = [
     
     
     
-    const lista_logos = [
+    // const lista_logos = [
     
-        {file: "./img/mattura/mattura-logo.png", descripcion: "mattura" },
+    //     {file: "./img/mattura/mattura-logo.png", descripcion: "mattura" },
         
-        {file: "./img/vioska/unavioska_logo-negro.png", descripcion: "unavioska"},
-        {file: "./img/rutea/rutea-logo-negro.png", descripcion: "rutea" },
+    //     {file: "./img/vioska/unavioska_logo-negro.png", descripcion: "unavioska"},
+    //     {file: "./img/rutea/rutea-logo-negro.png", descripcion: "rutea" },
         
-        {file: "img/mattura/mattura-logo.png", descripcion: "music" },
+    //     {file: "img/mattura/mattura-logo.png", descripcion: "music" },
         
-        {file: "./img/mattura/mattura-logo.png", descripcion: "cocos" },
+    //     {file: "./img/mattura/mattura-logo.png", descripcion: "cocos" },
         
-        {file: "./img/giftopia/giftopia-logo-negro.png", descripcion: "giftopia" },
+    //     {file: "./img/giftopia/giftopia-logo-negro.png", descripcion: "giftopia" },
         
-    ];    
+    // ];    
     
-    const sliderMobile = document.querySelector(".Main-sliderMobile");
-    const widthLogo = 200;
-    let offsetMobile = 0; //control del desplazamiento
-    const speedMobile = 1; //velocidad del desplazamiento 
-    
-    
+    // const sliderMobile = document.querySelector(".Main-sliderMobile");
+    // const widthLogo = 200;
+    // let offsetMobile = 0; //control del desplazamiento
+    // const speedMobile = 1; //velocidad del desplazamiento 
     
     
     
     
     
-    function generarLogos(){
     
-        lista_logos.forEach((logo) => {
     
-            const image = document.createElement('img');
-            image.classList.add('Main-sliderLogos');
-            image.src = logo.file;
-            image.alt = logo.descripcion;
-            sliderMobile.appendChild(image);
+    // function generarLogos(){
     
-            console.log("estoy generando ", logo)
+    //     lista_logos.forEach((logo) => {
     
-        });
+    //         const image = document.createElement('img');
+    //         image.classList.add('Main-sliderLogos');
+    //         image.src = logo.file;
+    //         image.alt = logo.descripcion;
+    //         sliderMobile.appendChild(image);
     
-        //clonamos imagenes para generar el efecto infinito 
-        const logos = Array.from(slider.children);
-        logos.forEach((img) => {
+    //         console.log("estoy generando ", logo)
+    
+    //     });
+    
+    //     //clonamos imagenes para generar el efecto infinito 
+    //     const logos = Array.from(slider.children);
+    //     logos.forEach((img) => {
             
-            const clone = img.cloneNode(true);
-            slider.appendChild(clone);
+    //         const clone = img.cloneNode(true);
+    //         slider.appendChild(clone);
     
     
-        }); 
-    }
+    //     }); 
+    // }
     
     
-    function moverSliderMobile(){
+    // function moverSliderMobile(){
     
-        offsetMobile -= speedMobile; //mueve hacia arriba 
-        if (offsetMobile <= -widthLogo*lista_logos.length) {
-            offsetMobile = 0
-        }
+    //     offsetMobile -= speedMobile; //mueve hacia arriba 
+    //     if (offsetMobile <= -widthLogo*lista_logos.length) {
+    //         offsetMobile = 0
+    //     }
     
-        sliderMobile.style.transform = `translateX(${offsetMobile}px)`;
-        requestAnimationFrame(moverSliderMobile);
+    //     sliderMobile.style.transform = `translateX(${offsetMobile}px)`;
+    //     requestAnimationFrame(moverSliderMobile);
     
-    }
+    // }
     
     
     
     //Llamamos a las funciones 
     
     
-    generarLogos();
-    moverSliderMobile();
+    // generarLogos();
+    // moverSliderMobile();
     
     
     generarImagenes();

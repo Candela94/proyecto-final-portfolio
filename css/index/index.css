@@ -254,7 +254,14 @@
     display: none;
 }
 
+.Main-sidebar{
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+}
+
 .Main-slider{
+
 
     display: flex;
     flex-direction: column;
@@ -263,6 +270,7 @@
     align-items: center;
     width: 400px;
     height: 600px;
+    
    
   
 
