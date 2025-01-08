@@ -184,17 +184,36 @@
         display: none;
     }
 
+
+
+
+
+
+
 .Main-introduccion{
+    width: 100%;
+    height: 90vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 4px;
+   
+
 }
+
+
+
+
+
     .Main-introduccionMobile {
         display: none;
     }
 
+
     .Onboarding {
         display: none;
     }
+
 
     .Prototipado {
         display: none;
@@ -208,24 +227,32 @@
     }
 
 
+    .Main-textoImagenes, .Main-imagenPrincipal{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
 .Main-textoImagenes{
 
-    display: flex;
-    flex-direction: column;
+  
     gap: 4px;
-    width: 50%;
+   height: 100%;
     
-    height: 100%;
+  
 }
 
 .Main-texto{
     display: flex;
     flex-direction: column;
-    gap: 100px;
+   
+    gap: 50px;
     padding: 1rem;
     border: solid 3px var(--txt);
     border-radius:10px;
 }
+
+
 
 
 .Main-h1Dekstop{
@@ -243,16 +270,43 @@
     letter-spacing: 2px;
 }
 
+
+
 .Main-imagenes{
     display: flex;
     justify-content: space-between;
     gap: 4px;
+    width: 100%;
+    overflow: hidden;
+    
 }
 
 .Main-imagenesIntro{
     
     width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
+
+
+.Main-imagenPrincipal{
+    width: 100%;
+    
+
+}
+
+.Main-imagenPpal{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+
+
+
+
 
 
 
