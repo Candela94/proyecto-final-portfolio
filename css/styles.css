@@ -1,0 +1,521 @@
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+.Body{
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: var(--primary);
+    scroll-behavior: smooth;
+
+}
+
+
+
+
+
+
+/* ------------------------- */
+/*    Variables              */
+/* ------------------------- */
+
+:root {
+
+
+    --primary: #fcf9f1;
+    --secondary: #BF9FEC;
+    --terciary:#2E2E2E;
+
+    --txt: #2E2E2E;  
+    --txt-button: #F6F6F0;
+   
+
+
+
+}
+
+
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+/* ------------------------- */
+/*    Fuentes                */
+/* ------------------------- */
+
+
+
+
+@font-face {
+    font-family: "cartoon";
+    src: url(../fonts/cartoonCheck-black\ .ttf);
+}
+
+@font-face {
+    font-family: "aniko-medium";
+    src: url(../fonts/aniko-medium.otf);
+}
+
+
+
+
+@font-face {
+    font-family: "aniko-semibold";
+    src: url(../fonts/aniko-semibold.otf);
+}
+
+
+@font-face {
+    font-family: "aniko-bold";
+    src: url(../fonts/mattone-bold.otf);
+}
+
+
+@font-face {
+    font-family: "mattone-black";
+    src: url(../fonts/mattone-black.otf);
+}
+
+
+@font-face {
+    font-family: "mattone-regular";
+    src: url(../fonts/mattone-regular.otf);
+}
+
+
+
+
+
+/* ------------------------- */
+/*         Header            */
+/* ------------------------- */
+
+
+
+/* Header version mobile  */
+
+
+.Header{
+
+    display: flex;
+    width: 100%;
+   
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    /* background-color: var(--secondary); */
+    color: var(--txt);
+    background-color: var(--primary);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+
+}
+
+
+
+.Header-dk{
+    display: none;
+}
+
+
+
+
+.Logo{
+    width: 26px;
+}
+
+.Header-ul{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+
+.Header-ul li{
+    
+    list-style: none;
+  
+}
+.Header-li{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* estilos para el botón cambio de modo */
+
+#btnMenu{
+    font-size: 2.5rem;
+    color: var(--secondary);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+
+.Main-modeButton{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.Main-modeButton:active{
+    transform: scale(0.7);
+}
+
+
+
+
+
+
+
+.Header-menu{
+
+
+    position: absolute;
+    top: 100px;
+    right: -500px;
+    box-shadow:0 3px 3px var(--secondary );
+    
+    transition: right 0.8s ease;
+
+    padding: 2rem;
+    width: 300px;
+    border: solid 0.5px black;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.Header-menu.active {
+    right: 0px;
+}
+
+.Header-close{
+    width: 16px;
+    border: none;
+    background: none;
+   
+}
+
+
+
+.Footer{
+
+    padding: 2em 4em;
+    background-color: var(--secondary);
+    border-radius: 20px 20px 0px 0px;
+  
+
+
+
+}
+
+.Footer-nav{
+   
+}
+
+
+
+.Footer-ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer-ul li{
+    list-style: none;
+}
+
+.Footer-ul li svg{
+    width: 32px;
+    color: var(--primary);
+}
+
+
+
+
+.Header-menuUl li{
+
+    list-style: none;
+    padding-top: 16px;
+    padding-bottom:8px ;
+   
+    border-bottom: solid 0.5px var(--txt);
+    color: var(--txt);
+}
+
+.Header-menuUl li svg{
+    width: 14px;
+}
+
+/* Header version dekstop */
+
+
+@media screen and (min-width: 650px) {
+
+    .Header{
+        display: none;
+    }
+
+
+    .Header-dk{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        background-color: var(--primary);
+        position: sticky;
+        top: 0;
+       
+       
+    }
+
+
+
+
+    .Header-dkNav{
+        
+        color: var(--primary);
+        padding: 1rem 2rem;
+        border-radius: 20px;
+        
+    }
+
+    .Header-dkUl{
+        display: flex;
+        gap: 6rem;
+        font-family: mattone-regular;
+        color: var(--terciary);
+    }
+
+
+
+    /* Estilos menú de navegación */
+
+    .Header-dkUl li{
+        list-style: none;
+        position: relative;
+        transition: transform 0.3s ease-in;
+    }
+
+
+
+
+
+    .Header-dkUl li:active{
+        transform: scale(0.7);
+
+    }
+
+
+    .Header-dkUl li a{
+
+       text-decoration: none;
+       padding-bottom: 6px;
+       position: relative;
+
+    }
+
+
+    /* Pseudo elemento para la linea  */
+    .Header-dkUl li a::after {
+
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--secondary);
+        transition: width 0.6s ease-in;
+
+    }
+
+
+    .Header-dkUl li a:hover::after{
+        width: 100%;
+    }
+
+
+
+
+
+    .HeaderDk-icons{
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+
+
+    .HeaderDk-ulIcons{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+      
+        padding: 1rem 2rem;
+        border-radius: 20px;
+    }
+
+    .HeaderDk-ulIcons li{
+        list-style:none;
+    }
+
+    .HeaderDk-liIcons  i{
+        font-size: 18px;
+        color: var(--txt);
+        transition: color 0.3s ease, transform 0.3s ease;
+
+    }
+
+
+
+    .HeaderDk-liIcons i:hover{
+       color: blue;
+       transform: scale(1.15);
+
+    }
+
+
+
+
+    .Footer{
+        display: none;
+    }
+
+
+
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- */
+/*          Modos            */
+/* ------------------------- */
+
+
+
+
+/*          Light mode      */
+/* ------------------------- */
+
+.u-lightMode{
+
+    --primary: #fcf9f1;
+    --secondary: #BF9FEC;
+    --terciary:#2E2E2E;
+
+    --txt: #2E2E2E;  
+    --txt-button: #F6F6F0;
+   
+
+
+}
+
+
+
+/*     Purple/Dark mode      */
+/* ------------------------- */
+
+
+.u-darkMode{
+
+--primary: #352D31;
+--secondary: #FEBAD0;
+--terciary:#ebb7c7;
+--txt: #F1EBDD;
+--txt-button: #F1EBDD;
+
+
+}
+
+
+
+/*         Pink mode         */
+/* ------------------------- */
+
+
+.u-pinkMode{
+    --primary: #FDA6DC;
+    --secondary: #FF4821;
+    --terciary:#F4B94B; 
+    --txt: #FBE2CA;
+    --txt-button: #FBE2CA;
+}
+
+
+
+/*       Green mode           */
+/* ------------------------- */
+
+.u-greenMode{
+
+    --primary: #97A75B;
+    --secondary: #FDA6DC;
+    --terciary:#f4e72f;
+    --txt: #fbee37;
+    --txt-button: #F7F7F0;
+}
+
+
+
+
+
+.Main-modeButtonDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.Main-modeButton {
+    border: none;
+    background-color: var(--secondary);
+    padding: 14px;
+    border-radius: 20px;
+
+}
+
+.Main-modeButton svg {
+    color: var(--primary);
+    width: 20px;
+   
+
+}
+
+
+
+
+
+
