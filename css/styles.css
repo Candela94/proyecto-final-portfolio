@@ -273,7 +273,11 @@ a {
     }
 
 
-   
+   .Header-navDekstop{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+   }
 
 
 
@@ -337,14 +341,14 @@ a {
 
 
 
-    .HeaderDk-icons{
+    .Header-icons{
         display: flex;
         align-items: center;
         gap: 28px;
     }
 
 
-    .HeaderDk-ulIcons{
+    .Header-ulIcons{
         display: flex;
         align-items: center;
         gap: 32px;
@@ -353,11 +357,11 @@ a {
         border-radius: 20px;
     }
 
-    .HeaderDk-ulIcons li{
+    .Header-ulIcons li{
         list-style:none;
     }
 
-    .HeaderDk-liIcons  i{
+    .Header-liIcons  i{
         font-size: 18px;
         color: var(--txt);
         transition: color 0.3s ease, transform 0.3s ease;
@@ -366,7 +370,7 @@ a {
 
 
 
-    .HeaderDk-liIcons i:hover{
+    .Header-liIcons i:hover{
        color: blue;
        transform: scale(1.15);
 
