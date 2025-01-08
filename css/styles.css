@@ -9,6 +9,7 @@
 }
 
 .Body{
+
     font-family: poppins;
     display: flex;
     flex-direction: column;
@@ -20,6 +21,10 @@
 
 
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 
@@ -45,20 +50,8 @@
 
 
 
-
-
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-
-
-
 /* ------------------------- */
-/*    Fuentes                */
+/*         Fuentes           */
 /* ------------------------- */
 
 
@@ -133,7 +126,7 @@ a {
 
 
 
-.Header-dk{
+.Header-navDekstop{
     display: none;
 }
 
@@ -275,35 +268,17 @@ a {
 
 @media screen and (min-width: 650px) {
 
-    .Header{
+    .Header-nav{
         display: none;
     }
 
 
-    .Header-dk{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2rem;
-        background-color: var(--primary);
-        position: sticky;
-        top: 0;
-       
-       
-    }
+   
 
 
 
 
-    .Header-dkNav{
-        
-        color: var(--primary);
-        padding: 1rem 2rem;
-        border-radius: 20px;
-        
-    }
-
-    .Header-dkUl{
+    .Header-ulDekstop{
         display: flex;
         gap: 6rem;
         font-family: mattone-regular;
@@ -314,7 +289,7 @@ a {
 
     /* Estilos menú de navegación */
 
-    .Header-dkUl li{
+    .Header-ulDekstop li{
         list-style: none;
         position: relative;
         transition: transform 0.3s ease-in;
@@ -324,13 +299,13 @@ a {
 
 
 
-    .Header-dkUl li:active{
+    .Header-ulDekstop li:active{
         transform: scale(0.7);
 
     }
 
 
-    .Header-dkUl li a{
+    .Header-ulDekstop li a{
 
        text-decoration: none;
        padding-bottom: 6px;
@@ -340,7 +315,7 @@ a {
 
 
     /* Pseudo elemento para la linea  */
-    .Header-dkUl li a::after {
+    .Header-ulDekstop li a::after {
 
         content: '';
         position: absolute;
@@ -354,7 +329,7 @@ a {
     }
 
 
-    .Header-dkUl li a:hover::after{
+    .Header-ulDekstop li a:hover::after{
         width: 100%;
     }
 
