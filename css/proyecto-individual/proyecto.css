@@ -345,6 +345,8 @@
 
 
     .Acordeon {
+        display: flex;
+        flex-direction: column;
         padding: 4rem;
     }
 
@@ -435,13 +437,6 @@
     .Acordeon-contenido.active {
         max-height: 1350px;
     }
-
-
-
-
-
-
-
 
 
 
