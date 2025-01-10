@@ -20,6 +20,7 @@ h1{
     gap: 2em;
     background-color: var(--primary);
     scroll-behavior: smooth;
+    color: var(--txt);
 
 }
 
