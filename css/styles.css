@@ -21,6 +21,7 @@ h1{
     background-color: var(--primary);
     scroll-behavior: smooth;
     color: var(--txt);
+    margin: 1rem;
 
 }
 
@@ -62,23 +63,6 @@ a {
 
 
 
-@font-face {
-    font-family: "cartoon";
-    src: url(../fonts/cartoonCheck-black\ .ttf);
-}
-
-@font-face {
-    font-family: "aniko-medium";
-    src: url(../fonts/aniko-medium.otf);
-}
-
-
-
-
-@font-face {
-    font-family: "aniko-semibold";
-    src: url(../fonts/aniko-semibold.otf);
-}
 
 
 @font-face {
@@ -281,6 +265,7 @@ a {
    .Header-navDekstop{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 2rem;
    }
 

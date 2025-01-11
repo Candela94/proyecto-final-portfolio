@@ -1,0 +1,26 @@
+
+
+
+
+
+
+.Main-formulario{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid black ;
+}
+
+
+
+
+
+.Main-formulario input{
+
+    font-family: poppins;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
