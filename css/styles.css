@@ -351,7 +351,7 @@ a {
         list-style:none;
     }
 
-    .Header-liIcons  i{
+    .Header-liIcons i{
         font-size: 18px;
         color: var(--txt);
         transition: color 0.3s ease, transform 0.3s ease;

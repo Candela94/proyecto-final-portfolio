@@ -31,7 +31,9 @@ btnMenu.addEventListener('click', () => {
 
 //Selección del botón para agregarle una función
 const modeButton = document.querySelector("#modeButton");
-const modeButtonDekstop = document.querySelector('#modeButtonDk');
+const modeButtonDekstop = document.querySelector('#modeButtonDekstop');
+
+const modeButtons = document.querySelectorAll(".modeButton")
 
 
 const modes = ["u-lightMode", "u-darkMode", "u-pinkMode", "u-greenMode"]; //array de los modos que dispone la web 
@@ -76,7 +78,8 @@ let index = 0;
 
 
 //Evento de escucha al hacer click
-modeButton.addEventListener("click", () => {
+modeButtons.forEach((button => {
+button.addEventListener("click", () => {
 
 
     //Sleccionamos el body donde se va a cambiar el modo
@@ -87,7 +90,7 @@ modeButton.addEventListener("click", () => {
     body.classList.remove(modes[index]);
 
 
-    modeButton.innerHTML = iconButton[index];
+    modeButtons.innerHTML = iconButton[index];
 
     //Añadimos un +1 al index para que vaya avanzando en el array en cada click, y así cambiar el modo, hasta reiniciarlo una vez llega al final 
 
@@ -97,30 +100,10 @@ modeButton.addEventListener("click", () => {
 
 
 });
+}));
 
 
 
-modeButtonDekstop.addEventListener("click", () => {
-
-
-  //Sleccionamos el body donde se va a cambiar el modo
-  const bodyDk = document.querySelector(".Body");
-
-
-  //Elimina la clase actual 
-  bodyDk.classList.remove(modes[index]);
-
-
-  modeButtonDekstop.innerHTML = iconButton[index];
-
-  //Añadimos un +1 al index para que vaya avanzando en el array en cada click, y así cambiar el modo, hasta reiniciarlo una vez llega al final 
-
-  index = (index + 1) % modes.length;   //modes es el array definido previamente
-
-  bodyDk.classList.add(modes[index]);
-
-
-});
 
 
 
