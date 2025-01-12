@@ -4,17 +4,17 @@
 const proyectos = [
 
 
-    { title: "Mattura", description: "Mattura", alt: "Mattura", file: "img/mattura/mattura-portada.png", logo: "img/mattura/logo-light-mattura.png", description: "imagen 1" },
+    { title: "Mattura", description: "Mattura", alt: "Mattura", file: "img/mattura/portadaImagen (2).png", logo: "img/mattura/logo-light-mattura.png", description: "imagen 1" },
 
-    { title: "Rutea", description: "Rutea", alt: "Rutea", file: "img/rutea/rutea-portada.png", logo: "img/rutea/rutea-logo.png", description: "imagen 2" },
+    { title: "Rutea", description: "Rutea", alt: "Rutea", file: "img/rutea/portada_optimized_.webp", logo: "e", description: "imagen 2" },
 
-    { title: "unavioska.", description: "unavioska.", alt: "unavioska.", file: "img/vioska/vioska-portada.png", logo: "img/vioska/una-vioska-logo.png", description: "imagen 3" },
+    { title: "unavioska.", description: "unavioska.", alt: "unavioska.", file: "img/vioska/6 (1)_optimized_.webp", logo: "img/vioska/una-vioska-logo.png", description: "imagen 3" },
 
     { title: "musicplayer", description: "musicplayer", alt: "musicplayer", file: "img/vioska/vioska-portada.png", logo: "img/vioska/una-vioska-logo..png", description: "imagen 3" },
 
-    { title: "cocoZone", description: "cocoZone", alt: "cocoZone", file: "img/cocos/cocos-portada.png", logo: "img/cocos/cocos-logo.png", description: "imagen 4" },
+    { title: "cocoZone", description: "cocoZone", alt: "cocoZone", file: "img/cocos/portada-color.webp", logo: "img/cocos/cocos-logo.png", description: "imagen 4" },
 
-    { title: "Giftopia", description: "Giftopia", alt: "Giftopia", file: "img/giftopia/d.png", logo: "img/giftopia/giftopia-logo.png", description: "imagen 5" },
+    { title: "Giftopia", description: "Giftopia", alt: "Giftopia", file: "img/giftopia/portada-princi.png", logo: "img/giftopia/giftopia-logo.png", description: "imagen 5" },
 
 ];
 
@@ -83,7 +83,7 @@ function mostrarCards() {
                              </button>
                         </div>
                         
-                        <img src = "${proyecto.file}" alt = "${proyecto.alt}" class= "card-img">
+                        <img src = "${proyecto.file}" alt = "${proyecto.alt}" class= "Card-img">
 
                          <div class="card-info">
                         <h3 class="card-title">${proyecto.title}</h3>

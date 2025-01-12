@@ -237,10 +237,10 @@
     }
 
 
+.
 
 
-
-    .Card-button{
+    .Card-button {
         font-family: poppins;
         background: none;
         color: white;
@@ -274,7 +274,7 @@
 
 
     
-    .card-img{
+    .Card-img{
         
         width: 100%;
         object-fit: cover;
@@ -287,7 +287,7 @@
 
 
 
-    .Main-card:hover .card-img{
+    .Main-card:hover .Card-img{
         filter: brightness(80%);
     }
 
@@ -303,9 +303,6 @@
 
     
 
-    .card-title{
-        
-    }
     
     
     
