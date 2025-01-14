@@ -276,7 +276,7 @@ a {
         display: flex;
         gap: 6rem;
         font-family: mattone-regular;
-        color: var(--terciary);
+        color: var(--txt);
     }
 
 

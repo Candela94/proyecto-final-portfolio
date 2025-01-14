@@ -88,6 +88,7 @@
    
     position: absolute;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -270,7 +271,7 @@
    
     gap: 50px;
     padding: 1rem;
-    border: solid 3px var(--txt);
+    border: solid 3px var(--secondary);
     border-radius:10px;
 }
 
@@ -280,7 +281,7 @@
 .Main-h1Dekstop{
     font-size: 80px;
     letter-spacing: 4px;
-    color: var(--txt);
+    color: var(--secondary);
 }
 
 
@@ -355,10 +356,18 @@
         font-size: 60px;
         color: var(--txt);
         padding: 16px 0px;
-        border-bottom: 0.3px solid var(--txt);
+        border-bottom: 0.3px solid var(--secondary);
         cursor: pointer;
+        transition: font-size 0.3s ease-in, color 0.3s ease-in, border-bottom 0.3s ease-in;
     }
 
+
+    .Acordeon-h2:hover{
+        font-size: 62px;
+        color: var(--secondary);
+        border-bottom: 0.5px solid var(--txt);
+        letter-spacing: 6px;
+    }
 
     .Acordeon-contenido {
 

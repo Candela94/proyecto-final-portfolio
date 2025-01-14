@@ -173,6 +173,7 @@
     
     .Main-proyectosDk{
         display: flex;
+        flex-direction: column;
         width: 100%;
         
         
@@ -183,8 +184,17 @@
 /*              Slider               */
 /* --------------------------------- */
 
-
+.Main-proyectosH1{
+    font-size: 100px;
+    margin-left: 2rem;
+    color: var(--secondary);
+    letter-spacing: 6px;
+    font-weight: 500;
+}
     
+
+
+
     .Main-slider {
         
         display: flex;
@@ -237,10 +247,10 @@
     }
 
 
-.
 
 
-    .Card-button {
+
+.Card-button {
         font-family: poppins;
         background: none;
         color: white;

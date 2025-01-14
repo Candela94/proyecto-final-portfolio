@@ -4,17 +4,17 @@
 const proyectos = [
 
 
-    { title: "Mattura", description: "Mattura", alt: "Mattura", file: "img/mattura/portadaImagen (2).png", logo: "img/mattura/logo-light-mattura.png", description: "imagen 1" },
+    { title: "Mattura", description: "Mattura", alt: "Mattura", file: "img/mattura/portadaImagen (2).png", logo: "img/logos/mattura-logo-blanco.png", description: "imagen 1", url: "mattura.html" },
 
-    { title: "Rutea", description: "Rutea", alt: "Rutea", file: "img/rutea/portada_optimized_.webp", logo: "e", description: "imagen 2" },
+    { title: "Rutea", description: "Rutea", alt: "Rutea", file: "img/rutea/portada_optimized_.webp", logo: "img/logos/logo-rutea-blanco.png", description: "imagen 2", url: "rutea.html" },
 
-    { title: "unavioska.", description: "unavioska.", alt: "unavioska.", file: "img/vioska/6 (1)_optimized_.webp", logo: "img/vioska/una-vioska-logo.png", description: "imagen 3" },
+    { title: "unavioska.", description: "unavioska.", alt: "unavioska.", file: "img/vioska/6 (1)_optimized_.webp", logo: "img/logos/una-vioska-blanco.png", description: "imagen 3" , url: "una-vioska.html"},
 
-    { title: "musicplayer", description: "musicplayer", alt: "musicplayer", file: "img/vioska/vioska-portada.png", logo: "img/vioska/una-vioska-logo..png", description: "imagen 3" },
+    { title: "musicplayer", description: "musicplayer", alt: "musicplayer", file: "img/logos/vioska-portada.png", logo: "img/vioska/una-vioska-logo..png", description: "imagen 3", url:"#" },
 
-    { title: "cocoZone", description: "cocoZone", alt: "cocoZone", file: "img/cocos/portada-color.webp", logo: "img/cocos/cocos-logo.png", description: "imagen 4" },
+    { title: "cocoZone", description: "cocoZone", alt: "cocoZone", file: "img/cocos/portada-color.webp", logo: "img/logos/cocos-logo.png", description: "imagen 4", url: "cocos.html" },
 
-    { title: "Giftopia", description: "Giftopia", alt: "Giftopia", file: "img/giftopia/portada-princi.png", logo: "img/giftopia/giftopia-logo.png", description: "imagen 5" },
+    { title: "Giftopia", description: "Giftopia", alt: "Giftopia", file: "img/giftopia/portada-princi.png", logo: "img/logos/giftopia-logo-rosa.png", description: "imagen 5", url: "giftopia.html" },
 
 ];
 
@@ -35,6 +35,8 @@ const pag1 = proyectos.slice(0, 3); //la primera página va a tener los 3 primer
 const pag2 = proyectos.slice(3, 6); //segunda pagina con los ultimos 3 proyectos 
 
 let paginaActual = 1; //mostramos la primera pagina
+
+
 
 
 
@@ -72,7 +74,7 @@ function mostrarCards() {
         card.innerHTML = `
 
                         <div class = "Card-btnLogo">
-                            <img class = "Card-Logo" src = "${proyecto.logo}" alt = "${proyecto.alt}">
+                            <img class = "Card-logo" src = "${proyecto.logo}" alt = "${proyecto.alt}">
 
                             <button class = "Card-button"> Ver proyecto
                             
@@ -91,6 +93,17 @@ function mostrarCards() {
                     </div>
 
         `
+
+        const button = card.querySelector(".Card-button"); //selección del botón de la tarjeta que voy a crear en la función mostrarCards()
+
+
+        //evento click al botón de la card
+        button.addEventListener('click', () => {
+
+                window.location.href = proyecto.url;  //redirige a la url del proyecto
+        });
+
+
 
         //agregar card al slider 
         slider.appendChild(card);

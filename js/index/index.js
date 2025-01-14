@@ -83,16 +83,16 @@ const lista_imagenes = [
     
     // const lista_logos = [
     
-    //     {file: "./img/mattura/mattura-logo.png", descripcion: "mattura" },
+    //     {file: "./img/logos/mattura-logo.png", descripcion: "mattura" },
         
-    //     {file: "./img/vioska/unavioska_logo-negro.png", descripcion: "unavioska"},
-    //     {file: "./img/rutea/rutea-logo-negro.png", descripcion: "rutea" },
+    //     {file: "./img/logos/una-vioska.png", descripcion: "unavioska"},
+    //     {file: ".img/logos/rutea-logo-negro", descripcion: "rutea" },
         
-    //     {file: "img/mattura/mattura-logo.png", descripcion: "music" },
+    //     {file: "./img/logos/mattura-logo.png", descripcion: "music" },
         
-    //     {file: "./img/mattura/mattura-logo.png", descripcion: "cocos" },
+    //     {file: ".img/logos/cocos-logo.png", descripcion: "cocos" },
         
-    //     {file: "./img/giftopia/giftopia-logo-negro.png", descripcion: "giftopia" },
+    //     {file: ".img/logos/giftopia-logo.png", descripcion: "giftopia" },
         
     // ];    
     
@@ -147,7 +147,7 @@ const lista_imagenes = [
     
     
     
-    //Llamamos a las funciones 
+    // //Llamamos a las funciones 
     
     
     // generarLogos();
