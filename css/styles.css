@@ -9,7 +9,11 @@
 }
 
 h1{
-    font-family: mattone-bold;
+    font-family: mattone-black;
+    font-size: 3rem;
+    color: var(--secondary);
+    word-wrap: break-word;
+  
 }
 
 .Body{
@@ -256,6 +260,13 @@ a {
 
 
 @media screen and (min-width: 650px) {
+
+
+    h1{
+        font-size: 10rem;
+    }
+
+
 
     .Header-nav{
         display: none;
