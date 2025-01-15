@@ -1,16 +1,20 @@
 
+// -----------------------------------------------
+//    1.Selección de constantes y variables 
+// -----------------------------------------------
 
-//Datos de las cards
+
+
 const proyectos = [
 
 
     { title: "Mattura", description: "Mattura", alt: "Mattura", file: "img/mattura/portadaImagen (2).png", logo: "img/logos/mattura-logo-blanco.png", description: "imagen 1", url: "mattura.html" },
 
-    { title: "Rutea", description: "Rutea", alt: "Rutea", file: "img/rutea/portada_optimized_.webp", logo: "img/logos/logo-rutea-blanco.png", description: "imagen 2", url: "rutea.html" },
+    { title: "Rutea", description: "Rutea", alt: "Rutea", file: "img/rutea/portada.webp", logo: "img/logos/logo-rutea-blanco.png", description: "imagen 2", url: "rutea.html" },
 
-    { title: "unavioska.", description: "unavioska.", alt: "unavioska.", file: "img/vioska/6 (1)_optimized_.webp", logo: "img/logos/una-vioska-blanco.png", description: "imagen 3" , url: "una-vioska.html"},
+    { title: "unavioska.", description: "unavioska.", alt: "unavioska.", file: "img/vioska/6 (1)_optimized_.webp", logo: "img/logos/una-vioska-blanco.png", description: "imagen 3", url: "una-vioska.html" },
 
-    { title: "musicplayer", description: "musicplayer", alt: "musicplayer", file: "img/logos/vioska-portada.png", logo: "img/vioska/una-vioska-logo..png", description: "imagen 3", url:"#" },
+    
 
     { title: "cocoZone", description: "cocoZone", alt: "cocoZone", file: "img/cocos/portada-color.webp", logo: "img/logos/cocos-logo.png", description: "imagen 4", url: "cocos.html" },
 
@@ -20,9 +24,7 @@ const proyectos = [
 
 
 
-// -----------------------------------------------
-//    1.Selección de constantes y variables 
-// -----------------------------------------------
+const proyectosMobile = document.querySelector(".Main-proyectos");
 
 
 const slider = document.querySelector('.Main-slider');
@@ -31,8 +33,11 @@ const btnSig = document.querySelector("#btnSig");
 const btnAnt = document.querySelector("#btnAnt");
 
 
+
+// Páginas que va a tener mi slider (versión dekstop)
+
 const pag1 = proyectos.slice(0, 3); //la primera página va a tener los 3 primeros proyectos 
-const pag2 = proyectos.slice(3, 6); //segunda pagina con los ultimos 3 proyectos 
+const pag2 = proyectos.slice(3, 5); //segunda pagina con los ultimos 3 proyectos 
 
 let paginaActual = 1; //mostramos la primera pagina
 
@@ -48,6 +53,41 @@ let paginaActual = 1; //mostramos la primera pagina
 // -----------------------------------------------
 
 
+// Función cards mobile
+function mostrarCardsMobile() {
+
+
+    // Recorremos el array para escoger todos los objetos que lo componen 
+    proyectos.forEach(proyecto => {
+        const { file, description, logo, url } = proyecto;
+
+
+        const cardMobile = document.createElement('div');
+        cardMobile.classList.add('Main-card')
+
+        cardMobile.innerHTML = `
+                                    <img class = "Main-img" src = "${file}" alt = "${description}">
+
+                                    <div class="Main-infoProyectos">
+                                     <img class= "Main-logoCard" src="${logo}" alt = "${description}">
+                                     
+
+                                      <div class="Main-cardButton"><a href = "${url}">Ver proyecto</a>
+                                   
+                                          </div>
+                    </div>
+                    
+
+                    `
+        proyectosMobile.appendChild(cardMobile);
+    }
+    )
+};
+
+
+
+
+// Función slider Dekstop
 function mostrarCards() {
 
     slider.innerHTML = ""; //limpiamos slider antes de agregar cards
@@ -100,7 +140,7 @@ function mostrarCards() {
         //evento click al botón de la card
         button.addEventListener('click', () => {
 
-                window.location.href = proyecto.url;  //redirige a la url del proyecto
+            window.location.href = proyecto.url;  //redirige a la url del proyecto
         });
 
 
@@ -147,5 +187,5 @@ btnAnt.addEventListener('click', () => {
 // -----------------------------------------------
 //    3.Ejecutamos
 // -----------------------------------------------
-
+mostrarCardsMobile()
 mostrarCards();

@@ -212,22 +212,28 @@ a {
 
 .Footer{
 
-    padding: 2em 4em;
-    background-color: var(--secondary);
-    border-radius: 20px 20px 0px 0px;
-  
-
+  width: 100%;
+padding: 1rem;
+border-radius: 20px 0px 0px 0px;
+background-color: var(--secondary);
+border-top: 3px solid var(--txt);
+position: fixed;
+bottom: 0;
 
 
 }
 
 .Footer-nav{
+    width: 100%;
+ 
+   
    
 }
 
 
 
 .Footer-ul{
+ 
     display: flex;
     justify-content: space-between;
 }
@@ -236,7 +242,7 @@ a {
     list-style: none;
 }
 
-.Footer-ul li svg{
+.Footer-svg{
     width: 32px;
     color: var(--primary);
 }

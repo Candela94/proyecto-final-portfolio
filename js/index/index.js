@@ -77,8 +77,7 @@ const lista_imagenes = [
     
     
     
-    
-    
+    // 1. Declaramos constantes y variables
     
     
     // const lista_logos = [
@@ -86,9 +85,9 @@ const lista_imagenes = [
     //     {file: "./img/logos/mattura-logo.png", descripcion: "mattura" },
         
     //     {file: "./img/logos/una-vioska.png", descripcion: "unavioska"},
+        
     //     {file: ".img/logos/rutea-logo-negro", descripcion: "rutea" },
         
-    //     {file: "./img/logos/mattura-logo.png", descripcion: "music" },
         
     //     {file: ".img/logos/cocos-logo.png", descripcion: "cocos" },
         
