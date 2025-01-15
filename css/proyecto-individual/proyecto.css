@@ -1,15 +1,13 @@
-
-
 .Main-h2 {
     font-family: mattone-black;
     font-size: 2.5rem;
-    color: var(--secondary);
+    color: var(--txt);
     letter-spacing: 2px;
 }
 
 
 .Main {
-  
+
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -19,7 +17,8 @@
 
 
 
-.Main-contentDekstop, .Main-introDekstop{
+.Main-contentDekstop,
+.Main-introDekstop {
     display: none;
 }
 
@@ -50,10 +49,10 @@
 }
  */
 
- 
 
 
-.Main-intro{
+
+.Main-intro {
 
     width: 100%;
     display: flex;
@@ -62,28 +61,30 @@
 
 }
 
-.Main-introduccionMobile{
+.Main-introduccionMobile {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-   
+
 }
 
-.Main-content{
+.Main-content {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    padding-bottom: 4rem;
 }
 
-.Main-imgLogo{
-  
+.Main-imgLogo {
+
     width: 100%;
     height: 200px;
     position: relative;
-    
+
 }
-.Main-logoBoton{
-   
+
+.Main-logoBoton {
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -104,7 +105,7 @@
 
 .Main-logo {
     width: 200px;
-   
+
 }
 
 .Main-descripcion {
@@ -123,20 +124,31 @@
 
 
 
-.Onboarding, .Prototipado, .Video {
+.Onboarding,
+.Prototipado,
+.Video {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.5em;
+    
 }
 
 
-
+.Onboarding-imagenes, .Prototipado-imagenes{
+    border: 3px solid var(--txt);
+    padding: 1em;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
 
 
 .Onboarding-imagenes {
     display: flex;
     justify-content: center;
     gap: 0.5em;
+   
+
+    
 }
 
 
@@ -201,147 +213,127 @@
 
 
 
-    .Main-h1 {
-
-       display: none;
-    }
-
-
-
-
-
-
-
-.Main-introduccion{
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 4px;
-   
-
-}
-
-
-
-
-
+    .Main-h1,
+    .Onboarding,
+    .Prototipado,
+    .Video,
     .Main-introduccionMobile {
         display: none;
     }
 
 
-    .Onboarding {
-        display: none;
+
+    .Main-introDekstop {
+        display: flex;
+        gap: 0.5rem;
+        height: 70%;
     }
 
-
-    .Prototipado {
-        display: none;
-
-    }
-
-
-
-    .Video {
-        display: none;
-    }
-
-
-    .Main-textoImagenes, .Main-imagenPrincipal{
-        flex: 1;
+    .Main-textoImagenes {
+        
         display: flex;
         flex-direction: column;
     }
 
-.Main-textoImagenes{
 
-  
-    gap: 4px;
-    height: 100%;
-    
-  
-}
-
-.Main-texto{
-    display: flex;
-    flex-direction: column;
    
-    gap: 50px;
-    padding: 1rem;
-    border: solid 3px var(--secondary);
-    border-radius:10px;
-}
+
+    .Main-textoImagenes {
+
+        gap: 0.5rem;
+        height: 100%;
+
+    }
 
 
 
 
-.Main-h1Dekstop{
-    font-size: 80px;
-    letter-spacing: 4px;
-    color: var(--secondary);
-}
+    .Main-texto {
 
-
-.Main-h2Dekstop{
-    text-align: end;
-    font-family: mattone-black;
-    font-size: 20px;
-    color: var(--txt);
-    letter-spacing: 2px;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 1rem;
+        border: solid 3px var(--secondary);
+        border-radius: 10px;
+    }
 
 
 
-.Main-imagenes{
-    display: flex;
-    justify-content: space-between;
-    gap: 4px;
-    width: 100%;
-    overflow: hidden;
-    
-}
 
-.Main-imagenesIntro{
-    
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
+    .Main-h1Dekstop {
+        font-size: 80px;
+        letter-spacing: 4px;
+        color: var(--txt);
+    }
 
 
-.Main-imagenPrincipal{
-    width: 100%;
-  
-
-}
-
-.Main-imagenPpal{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    border-radius: 10px;
-    
-   
-}
-
-.Main-logoPrincipal{
-    width: 200px;
-    position: absolute;
-    top: 30px;
-    transform: translate(-50%, -50%);
-    
-}
+    .Main-h2Dekstop {
+        text-align: end;
+        font-family: mattone-black;
+        font-size: 20px;
+        color: var(--txt);
+        letter-spacing: 2px;
+    }
 
 
+
+    .Main-imagenes {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .Main-imagenesIntro {
+
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+
+    .Main-imagenPrincipal {
+        width: 100%;
+        position: relative;
+
+
+    }
+
+    .Main-imagenPpal {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+
+
+    }
+
+    .Main-logoPrincipal {
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+
+
+    .Main-contentDekstop{
+        display: flex;
+        flex-direction: column;
+    }
 
 
     .Acordeon {
         display: flex;
         flex-direction: column;
-        padding: 4rem;
+        padding: 1rem;
+        margin-left: 1rem;
     }
 
 
@@ -357,11 +349,11 @@
         padding: 16px 0px;
         border-bottom: 0.3px solid var(--secondary);
         cursor: pointer;
-        transition: font-size 0.3s ease-in, color 0.3s ease-in, border-bottom 0.3s ease-in;
+        transition: font-size 0.3s ease-in, color 0.3s ease-in, border-bottom 0.3s ease-in, letter-spacing 0.6s ease-in;
     }
 
 
-    .Acordeon-h2:hover{
+    .Acordeon-h2:hover {
         font-size: 62px;
         color: var(--secondary);
         border-bottom: 0.5px solid var(--txt);
@@ -412,7 +404,7 @@
         padding: 1rem;
         width: 60%;
         height: 100%;
-       
+
 
 
 

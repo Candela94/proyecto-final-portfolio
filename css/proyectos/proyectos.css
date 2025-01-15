@@ -5,15 +5,9 @@
 .Main {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
     /* padding: 1em; */
 }
 
-
-.Main-h1 {
-    font-family: "Mattone";
-    font-size: 32px;
-}
 
 
 .Main-slider {
@@ -135,20 +129,12 @@
 
 @media screen and (min-width: 650px) {
 
-    .Header-icon {
-        display: none;
-    }
+   
 
 
 
 
-    .Main-h1 {
-
-        font-size: 100px;
-        letter-spacing: 2rem;
-        color: var(--secondary);
-    }
-
+  
 
 
 
@@ -184,22 +170,14 @@
 /*              Slider               */
 /* --------------------------------- */
 
-.Main-proyectosH1{
-    font-size: 100px;
-    margin-left: 2rem;
-    color: var(--secondary);
-    letter-spacing: 6px;
-    font-weight: 500;
-}
+
     
-
-
 
     .Main-slider {
         
         display: flex;
-        justify-content: center;
-        gap: 1rem;
+        justify-content: end;
+        gap: 0.5rem;
         width: 100%;
         height: 35%;
         padding: 2rem;
@@ -217,7 +195,11 @@
         position: relative;
         transition: all 1s ease;
         overflow: hidden;
+        padding:1rem;
+        border-left: 1px solid var(--txt);
+        border-right: 1px solid var(--txt);
         
+
     }
 
 
@@ -233,7 +215,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 150px;
-        transition: transform 1s ease, top 0.6s ease;
+        transition: transform 1.5s ease, top 1s ease;
         z-index: 2;
     }
 
@@ -243,7 +225,7 @@
 
 
     .Card-logo{
-        width: 200px;
+        width: 100px;
     }
 
 

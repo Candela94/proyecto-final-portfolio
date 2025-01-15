@@ -13,23 +13,12 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    gap: 3rem;
+
    
     width: 100%;
     height: 100vh;
 }
 
-
-
-
-
-.Main-h1{
-    font-family: mattone-black;
-    font-size: 80px;
-    letter-spacing: 1rem;
-    color: var(--txt);
-    
-}
 
 
 

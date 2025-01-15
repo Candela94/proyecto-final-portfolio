@@ -11,8 +11,9 @@
 h1{
     font-family: mattone-black;
     font-size: 3rem;
-    color: var(--secondary);
+    color: var(--txt);
     word-wrap: break-word;
+    letter-spacing: 2px;
   
 }
 
@@ -25,7 +26,7 @@ h1{
     background-color: var(--primary);
     scroll-behavior: smooth;
     color: var(--txt);
-    margin: 1rem;
+ 
 
 }
 
@@ -103,13 +104,14 @@ a {
 
     display: flex;
     width: 100%;
-   
     align-items: center;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1em 2em;
     /* background-color: var(--secondary); */
     color: var(--txt);
-    background-color: var(--primary);
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    border-bottom: 3px solid var(--txt);
+    border-radius: 0 0 0 50px;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -156,7 +158,7 @@ a {
 
 #btnMenu{
     font-size: 2.5rem;
-    color: var(--secondary);
+    color: var(--txt);
     border: none;
     background: none;
     cursor: pointer;
@@ -263,9 +265,12 @@ a {
 
 
     h1{
-        font-size: 10rem;
+        font-weight: 900;
+        font-size: 9rem;
     }
 
+
+   
 
 
     .Header-nav{
@@ -275,9 +280,12 @@ a {
 
    .Header-navDekstop{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
     gap: 2rem;
+   
+   
    }
 
 
@@ -285,9 +293,12 @@ a {
 
     .Header-ulDekstop{
         display: flex;
+        justify-content: center;
+        width: 100%;
         gap: 6rem;
         font-family: mattone-regular;
         color: var(--txt);
+        
     }
 
 
