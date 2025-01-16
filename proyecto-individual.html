@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Candela Fos Segarra">
+    <title>Mattura</title>
+
+    <!-- iconos de google -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/proyecto-individual/lightbox.css">
+    <link rel="stylesheet" href="./css/proyecto-individual/proyecto.css">
+
+
+    <!-- JS -->
+    <script src="./js/mattura/mattura.js" defer></script>
+    <script src="./js/proyecto/lightbox.js" defer></script>
+    <script src="./js/botones.js" defer></script>
+
+
+
+</head>
+
+
+
+<body class="Body">
+
+    <Header class="Header">
+        <a href="./index.html"><img src="#" alt="Logo" class="Logo"></a>
+
+
+        <!-- Menú navegación mobile -->
+        <nav class="Header-nav">
+            <ul class="Header-ul">
+
+                <li> <button class="Main-modeButton modeButton" id="modeButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                        </svg>
+
+                    </button></li>
+                <li> <a href="#"><button id="btnMenu"><span class=" material-symbols-outlined">
+                                menu</a></li>
+                </button>
+            </ul>
+        </nav>
+
+
+
+        <!-- Menú navegación dekstop -->
+        <nav class="Header-navDekstop">
+
+            <ul class="Header-ulDekstop">
+                <li class="Header-liDekstop"><a href="./about.html">Sobre mi</a></li>
+                <li class="Header-liDekstop"><a href="./proyectos.html">Proyectos</a></li>
+                <li class="Header-liDekstop"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+
+            <div class="Header-icons">
+                <ul class="Header-ulIcons">
+                    <li class="Header-liIcons"><a href="https://www.behance.net/candelasegarra" target="_blank"><i
+                                class="fa-brands fa-behance"></i></a></li>
+
+                    <li class="Header-liIcons"><a href="https://www.linkedin.com/in/candela-fos-segarra-4b78b92b7/"
+                            target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+
+                </ul>
+                <div class="Main-modeButtonDiv">
+                    <button class="Main-modeButton modeButton" id="modeButtonDekstop">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                        </svg>
+
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+        </nav>
+
+    </Header>
+
+    <!-- ------------------------------ -->
+    <!--   Introducción versión Mobile   -->
+    <!-- ------------------------------ -->
+
+
+    <section class="Main-intro">
+
+        <div class="Main-introduccionMobile">
+            <!-- Imagen cabecera del proyecto -->
+
+            <div class="Main-imgLogo">
+
+
+                <div class="Main-logoBoton">
+                    <!-- Aqui va el logo -->
+                </div>
+
+            </div>
+
+
+
+            <div class="Main-descripcion">
+                <!-- Descripcion de la app -->
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <section class="Main-content">
+
+        <section class="Onboarding" id="Seccion-onboarding">
+            <h2 class="Main-h2"></h2>
+
+            <div class="Onboarding-imagenes"></div>
+            <div class="Onboarding-lightbox ">
+                <button class="Onboarding-close">
+                    <svg class="Onboarding-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </button>
+                <img alt="imagenGrande" class="Onboarding-imagenGrande">
+            </div>
+
+        </section>
+
+
+        <section class="Video" id="Seccion-video"></section>
+
+    </section>
+
+
+</body>
+
+</html>

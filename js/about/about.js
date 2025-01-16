@@ -11,19 +11,16 @@ const contenidos = document.querySelectorAll(".Acordeon-contenido");
 //2. Funciones y addEventListeners
 
 
-
-
 paginas.forEach((pagina) => {
 
     pagina.addEventListener("click", () => {
 
+        const contenido = pagina.querySelector(".Acordeon-contenido")
+    
 
-        //const contentId = pagina.dataset.content;
-        //const content = document.getElementById(contentId);
 
+        //Cerramos las páginas del acordeón
 
-        //cerramos todas las paginas antes de abrir
-        // yo habia puesto directamente pag.classList.remove("u-isActive)
         paginas.forEach(pag => {
             if (pag !== pagina) {
                 pag.classList.remove("u-isActive");
@@ -32,25 +29,31 @@ paginas.forEach((pagina) => {
         });
 
 
-        // contenido.forEach(cont => {
-        //     cont.classList.remove("u-txtActive");
-        // });
+        //Alternamos clase en la página seleccionada
+        const isActive = pagina.classList.toggle("u-isActive");
+      
 
-        //abrimos página seleccionada
+        //mostramos y ocultamos el contenido
 
+        if (isActive) {
+            contenido.classList.add("u-txtActive");
+        } else {
+            contenido.classList.remove("u-txtActive");
+         }
 
-        pagina.classList.toggle("u-isActive");
-        const contenido = pagina.querySelector(".Acordeon-contenido");
-        contenido.classList.add("u-txtActive");
-        // if (content) {
-        // content.classList.add("u-txtActive");
-        // }
     });
 
+        //Aseguramos de que el contenido esté cerrado al cargar la página 
+        paginas.forEach((pagina) =>{
+
+            pagina.classList.remove("u-isActive");
+            pagina.querySelector(".Acordeon-contenido").classList.remove("u-txtActive");
+
+        });
 
 
 
 });
 
 
-paginas[0].click();
+// paginas[0].click();

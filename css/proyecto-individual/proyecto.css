@@ -20,6 +20,7 @@
     flex-direction: column;
     gap: 2rem;
     height: 100vh;
+    margin: 1rem;
 
 }
 
@@ -152,6 +153,14 @@
 }
 
 
+
+
+
+
+
+
+/* -------------------------------- */
+
 .Onboarding-imagenes {
     display: flex;
     justify-content: center;
@@ -163,13 +172,81 @@
 
 
 
-
-
 .Onboarding-img {
     width: 22%;
     border-radius: 6px;
+    transition: all .5s ease;
+    cursor: pointer;
 
 }
+
+.Onboarding-img:hover{
+    transform: scale(0.95);
+}
+
+.Onboarding-img:active{
+    transform: scale(1.1);
+}
+
+
+.Onboarding-lightbox{
+    width: 100%;
+    opacity: 0;
+   
+    display: flex;
+    flex-flow: column;
+    backdrop-filter: blur(2rem);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   pointer-events: none;
+   transition: all 0.5s ease;
+   
+}
+
+
+.Onboarding-lightbox.isActive{
+
+opacity: 1;
+pointer-events: auto;
+
+}
+
+
+
+
+
+
+.Onboarding-close{
+    background-color: red;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+
+.Onboarding-close:hover{
+    transform: scale(0.9);
+}
+
+.Onboarding-close:active{
+    transform: scale(1.1);
+}
+
+.Onboarding-lightbox .Onboarding-imagenGrande{
+   
+    width: 80%;
+    max-width: 900px;
+    height:auto;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, .4);
+
+}
+
+
+
+
+/* -------------------------------- */
+
+
 
 
 
@@ -231,7 +308,7 @@
 
 @media screen and (min-width: 650px) {
 
-
+   
 
     .Main-h1,
     .Onboarding,
@@ -241,7 +318,7 @@
         display: none;
     }
 
-
+ 
 
     .Main-introDekstop {
         display: flex;

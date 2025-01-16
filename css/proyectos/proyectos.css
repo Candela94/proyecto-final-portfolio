@@ -2,10 +2,9 @@
 
 
 
-.Main {
-    display: flex;
-    flex-direction: column;
-    /* padding: 1em; */
+.Main{
+    margin: 1rem;
+    padding: 1rem;
 }
 
 
@@ -177,7 +176,7 @@
         justify-content: end;
         gap: 0.5rem;
         width: 100%;
-        height: 35%;
+        height: 100%;
         padding: 2rem;
         overflow: hidden;
         

@@ -17,16 +17,6 @@
 
 
 
-.Main{
-
-    display: flex;
-    flex-direction: column;
-    gap: 56px;
-    width: 100%;
-    height: 100vh;
-    padding: 1rem;
-   
-}
 
 
 .Main-titulos{
@@ -47,10 +37,7 @@
 
 .Main-h1{
     
-    font-family: mattone-black;
-    font-size: 32px;
-    color: var(--txt);
-    width: 100%;
+   
     word-wrap: break-word;
 
 }
@@ -179,10 +166,43 @@
 
 
 /* ------------------------------------------ */
-/*     Media Query versión Tablet/Dekstop     */
+/*     Media Query versión Tablet    */
 /* ------------------------------------------ */
 
+@media screen and (max-width: 649px){
 
+
+
+
+.Main-h1{
+  
+  
+    font-size: 3rem;
+    width: 100%;
+    word-wrap: break-word;
+
+   
+}
+
+
+
+    .Main-linea{
+        width: 70%;
+    }
+    
+
+
+}
+
+
+
+
+
+
+
+/* ------------------------------------------ */
+/*     Media Query versión Dekstop            */
+/* ------------------------------------------ */
 
 @media screen and (min-width: 650px) {
 
@@ -196,10 +216,9 @@
    
 
 .Main-h1{
-    font-family: mattone-black;
-    font-size: 72px;
   
-    
+  
+    font-size: 5.5rem;
     width: 100%;
     word-wrap: break-word;
 
@@ -225,11 +244,21 @@
 
 
 .Main-h2{
-    font-size: 40px;
+    font-size:2rem;
     margin-right: 32px;
     width: 100%;
     word-wrap: break-word;
 }
+
+
+.Main-h2Diseno{
+    font-size: 2rem;
+}
+
+
+
+
+
 
 
 .Main-diseno{
@@ -254,7 +283,7 @@
 
 
 .Main-linea{
-    width: 50%;
+    width: 100%;
 }
 
 .Main-contenedor{
