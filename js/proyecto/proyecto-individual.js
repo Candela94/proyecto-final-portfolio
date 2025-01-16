@@ -120,12 +120,55 @@ const proyectos = [
         ],
 
 
+    },
 
+
+
+
+    {
+        id: 3,
+        h1: "unavioska",
+        h2: "e-commerce",
+        descripcion: "Catálogo para unavioska, un taller de bisutería de plata y macramé",
+        url: "",
 
 
      
+        //Imagenes del proyecto
+        imagenes: [
+            { src: "imgs/vioska/anillos-macrame.png", alt: "Imagen" },
+            { src: "imgs/vioska/detalle-producto.png", alt: "Imagen" },
+            { src: "imgs/vioska/cartel-2.jpg", alt: "Imagen" },
+            { src: "imgs/vioska/pendientes-luna.jpg", alt: "Imagen" },
+            { src: "imgs/vioska/anillos-madera.jpg", alt: "Imagen" },
+            
+            { src: "imgs/vioska/trabajos.png", alt: "Imagen" },
+            { src: "imgs/vioska/portada.png", alt: "Imagen" }, 
+            { src: "imgs/vioska/log-in.png", alt: "Imagen" },
+            { src: "imgs/vioska/cartel-3.png", alt: "Imagen" },
+            { src: "imgs/vioska/categorias.png", alt: "Imagen" },
 
-    }
+            
+            { src: "imgs/vioska/cartel-4.png", alt: "Imagen" },
+            { src: "imgs/vioska/contacto.png", alt: "Imagen" },
+            { src: "imgs/vioska/imagen-estanteria.png", alt: "Imagen" },
+            { src: "imgs/vioska/favs.png", alt: "Imagen" },
+
+        
+
+        ],
+
+        inicio: [
+
+          
+            { src: "imgs/mattura/img-tronco.png", alt: "portada" },
+            { src: "imgs/mattura/imagen-detalle.png", alt: "detalle2" },
+            { src: "imgs/mattura/imagen-estanteria.png", alt: "detalle2" },
+           
+
+        ],
+    },
+
 
 ];
 
