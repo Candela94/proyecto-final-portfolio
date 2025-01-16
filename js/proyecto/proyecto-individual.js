@@ -1,55 +1,401 @@
 
 
+//1. Definimos constantes y variables 
 
 const proyectos = [
 
+    //Proyecto Mattura
     {
-        //Datos de la imagen
-        id:1,
-        titulo:"MATTURA",
-        src:"",
-        logo:"",
-        alt:"",
+        id: 1,
+        h1: "MATTURA",
+        h2: "e-commerce",
+        descripcion: "Descubre este e-commerce de un negocio local que fabrica muebles de madera de una forma amigable y sostenible con el medio ambiente",
+        url: "",
 
+
+        onboarding: [
+
+            { src: "imgs/mattura/onboarding-1.png", alt: "onboarding1" },
+            { src: "imgs/mattura/onboarding-2.png", alt: "onboarding2" },
+            { src: "imgs/mattura/onboarding-3.png", alt: "onboarding3" },
+            { src: "imgs/mattura/onboarding-4.png", alt: "onboarding4" },
+
+
+
+        ],
+
+        //Imagenes del proyecto
+        imagenes: [
+            { src: "imgs/mattura/home-inicio.png", alt: "Imagen" },
+            { src: "imgs/mattura/cartel-1.png", alt: "Imagen" },
+            { src: "imgs/mattura/producto.png", alt: "Imagen" },
+            { src: "imgs/mattura/cartel-2.png", alt: "Imagen" },
+            { src: "imgs/mattura/detalle.png", alt: "Imagen" },
+            
+            { src: "imgs/mattura/trabajos.png", alt: "Imagen" },
+            { src: "imgs/mattura/portada.png", alt: "Imagen" }, 
+            { src: "imgs/mattura/log-in.png", alt: "Imagen" },
+            { src: "imgs/mattura/cartel-3.png", alt: "Imagen" },
+            { src: "imgs/mattura/categorias.png", alt: "Imagen" },
+
+            
+            { src: "imgs/mattura/cartel-4.png", alt: "Imagen" },
+            { src: "imgs/mattura/contacto.png", alt: "Imagen" },
+            { src: "imgs/mattura/imagen-estanteria.png", alt: "Imagen" },
+            { src: "imgs/mattura/favs.png", alt: "Imagen" },
+
+        
+
+        ],
+
+        inicio: [
+
+          
+            { src: "imgs/mattura/img-tronco.png", alt: "portada" },
+            { src: "imgs/mattura/imagen-detalle.png", alt: "detalle2" },
+            { src: "imgs/mattura/imagen-estanteria.png", alt: "detalle2" },
+           
+
+        ],
+    },
+
+
+    //Proyecto cocozone
+    {
+        id:2,
+        h1: "cocozone",
+        h2: "userexperiencie,gaming,UX/UI design",
+        descripcion: " cocozone es una plataforma gaming en la que puedes comprar y vender juegos, y jugar online. Únete y forma parte de la comunidad coco!",
+        url: "",
+
+
+
+        onboarding: [
+
+            { src: "imgs/cocos/onboarding1.png", alt: "onboarding1" },
+            { src: "imgs/cocos/onboarding2.jpg", alt: "onboarding2" },
+            { src: "imgs/cocos/onboarding3.jpg", alt: "onboarding3" },
+            { src: "imgs/cocos/onboarding4.png", alt: "onboarding4" },
+
+
+
+        ],
+
+
+           //Imagenes del proyecto
+           imagenes: [
+               { src: "imgs/cocos/chat.png", alt: "Imagen" },
+            { src: "imgs/cocos/cartel-1.png", alt: "Imagen" },
+            { src: "imgs/cocos/perfil.png", alt: "Imagen" },
+            { src: "imgs/cocos/cartel-3.png", alt: "Imagen" },
+            { src: "imgs/cocos/cartel-4.png", alt: "Imagen" },
+
+            { src: "imgs/cocos/registro.png", alt: "Imagen" },
+            { src: "imgs/cocos/portada.png", alt: "Imagen" },
+            { src: "imgs/cocos/cartel-2.png", alt: "Imagen" },
+            { src: "imgs/cocos/minijuegos.png", alt: "Imagen" },
+            { src: "imgs/cocos/cartel-5.png", alt: "Imagen" },
+            { src: "imgs/cocos/filtrado.png", alt: "Imagen" },
+            { src: "imgs/cocos/tus-juegos.png", alt: "Imagen" },
+           
+            { src: "imgs/cocos/home.png", alt: "Imagen" },
+           
+            { src: "imgs/cocos/registro1.png", alt: "Imagen" },
+
+
+
+        ],
+
+
+        //Imagenes del proyecto
        
+        inicio: [
 
+          
+            { src: "imgs/cocos/portada-color.png", alt: "Imagen" },
+            { src: "imgs/cocos/coco-2.jpg", alt: "Imagen" },
+            { src: "imgs/cocos/coco1.jpg", alt: "Imagen" },
+           
+
+        ],
+
+
+
+
+
+     
 
     }
-
-
 
 ];
 
 
 
-const contenedorProyecto = document.getElementById("proyecto");
+
+//2. Queremos obtener el ID del proyecto desde la URL 
 
 const urlParams = new URLSearchParams(window.location.search);
-const proyectoId = urlParams.get("id");
+const proyectoId = Number(urlParams.get("id"));//obtenemos el parámetro id de la URL
+console.log('este es mi proyecto ', proyectoId);
 
-const proyecto = proyectos.find((p) => p.id == proyectoId);
-
-if (proyecto) {
-    contenedorProyecto.innerHTML = `<div class = "Project">
-
-            <section class = "Main-introduccionMobile">
-             <div class="Main-imgLogo">
-
-                    <img src=".${proyecto.src}" alt="${proyecto.alt}" class="Main-img">
-
-                    <div class="Main-logoBoton">
-                        <svg class="Main-logo" viewBox="0 0 182 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15.334 18.518H15.47L19.924 5.666H27.71V29.5H22.746V11.854H22.61L17.306 26.644H13.022L7.786 11.854H7.582V29.5H2.822V5.666H10.812L15.334 18.518ZM39.9649 16.274L38.9789 19.742H44.5889L43.6709 16.41C42.7529 13.112 42.2769 11.378 41.8689 9.27H41.7329C41.3249 11.31 40.8149 13.248 39.9649 16.274ZM38.2309 5.666H45.4729L52.7149 29.5H47.2749L45.7789 24.026H37.7889L36.2589 29.5H31.0229L38.2309 5.666ZM57.6821 29.5V9.95H51.7661V5.666H68.8001V9.95H62.8841V29.5H57.6821ZM74.9145 29.5V9.95H68.9985V5.666H86.0325V9.95H80.1165V29.5H74.9145ZM98.2329 25.488C100.715 25.488 102.041 24.162 102.041 20.864V5.666H107.243V20.116C107.243 27.392 102.789 29.84 97.5189 29.84C91.3649 29.84 88.7809 26.134 88.7809 21.238V5.666H93.9829V20.218C93.9829 23.618 95.1729 25.488 98.2329 25.488ZM112.656 5.666H120.408C125.678 5.666 128.67 7.672 128.67 12.67C128.67 16.818 126.426 18.756 123.638 19.3V19.436C124.896 20.048 125.678 20.932 126.8 22.938L130.438 29.5H124.25L120.306 21.748C119.864 20.898 119.218 20.626 118.13 20.626H117.79V29.5H112.656V5.666ZM117.79 9.95V16.512H119.762C122.516 16.512 123.4 15.322 123.4 13.112C123.4 10.936 122.108 9.95 119.83 9.95H117.79ZM140.172 16.274L139.186 19.742H144.796L143.878 16.41C142.96 13.112 142.484 11.378 142.076 9.27H141.94C141.532 11.31 141.022 13.248 140.172 16.274ZM138.438 5.666H145.68L152.922 29.5H147.482L145.986 24.026H137.996L136.466 29.5H131.23L138.438 5.666Z"
-                                fill="#DFDFDA" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M180.47 9.75C180.49 9.50053 180.5 9.25031 180.5 9V7.5H177.875C175.927 7.49968 174.032 8.13113 172.474 9.29955C170.916 10.468 169.779 12.1103 169.233 13.98C168.393 12.8957 167.315 12.0184 166.083 11.4151C164.851 10.8119 163.497 10.4989 162.125 10.5H159.5V12C159.5 14.3869 160.448 16.6761 162.136 18.364C163.824 20.0518 166.113 21 168.5 21H168.875V27.375C168.875 27.6734 168.994 27.9595 169.205 28.1705C169.415 28.3815 169.702 28.5 170 28.5C170.298 28.5 170.585 28.3815 170.795 28.1705C171.006 27.9595 171.125 27.6734 171.125 27.375V18H171.5C173.757 18.0003 175.932 17.1524 177.594 15.6243C179.255 14.0962 180.282 11.9995 180.47 9.75ZM171.166 15.75C171.35 14.0997 172.136 12.5753 173.374 11.4684C174.612 10.3615 176.214 9.74968 177.875 9.75H178.209C178.025 11.4003 177.239 12.9247 176.001 14.0316C174.763 15.1385 173.161 15.7503 171.5 15.75H171.166ZM162.125 12.75C163.786 12.7497 165.388 13.3615 166.626 14.4684C167.864 15.5753 168.65 17.0997 168.835 18.75H168.5C166.839 18.7503 165.237 18.1385 163.999 17.0316C162.761 15.9247 161.975 14.4003 161.79 12.75H162.125Z"
-                                fill="var(#FFFFFF)" />
-                        </svg>
+const contenedorProyecto = document.querySelector("#Main-contenedorProyecto");
+const proyecto = proyectos.find(p => p.id == proyectoId);
 
 
-                       
-                    </div> 
+if(proyecto) {
 
+    contenedorProyecto.innerHTML =`
+
+
+
+    <section class="Main-intro">
+
+    <div class="Main-introduccionMobile">
+        <div class="Main-imgLogo">
+
+            <img src="${proyecto.inicio[0].src}" alt="${proyecto.inicio[0].alt}" class="Main-img">
+
+            <div class="Main-logoBoton">
+               
+                <svg></svg>
+            </div> 
+
+                 <div class="Main-descripcion">
+                  
+                </div>
+         
+           
+        </div>
+        </div>
+
+
+  <!-- ------------------------------ -->
+  <!--   INTRO VERSION DEKSTOP         -->
+  <!-- ------------------------------ -->
+
+   <div class="Main-introDekstop">
+
+
+            <div class="Main-textoImagenes">
+
+
+                <div class="Main-texto">
+
+                    <h1 class="Main-h1Dekstop">${proyecto.h1}</h1>
+                    <div class="Main-hastaghs">
+                        <h2 class="Main-h2Dekstop">#userexperience</h2>
+                        <h2 class="Main-h2Dekstop">${proyecto.h2}</h2>
+                        <h2 class="Main-h2Dekstop">#ux/ui</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="Main-imagenes">
+                    <img src="${proyecto.inicio[1].src}" alt="${proyecto.inicio[1].alt}" class="Main-imagenesIntro">
+                     <img src="${proyecto.inicio[2].src}" alt="${proyecto.inicio[2].alt}" class="Main-imagenesIntro">
+                   
+                </div>
+
+
+            </div>
+
+
+
+            <div class="Main-imagenPrincipal">
+               <img src="${proyecto.inicio[0].src}" alt="${proyecto.inicio[0].alt}" class = "Main-imagenPpal">
+              
+                <img src="">
+            </div>
+
+
+        </div>
+
+
+
+
+
+  <section class="Main-content">
+      
+    <section class="Onboarding" id="Seccion-onboarding">
+    <h2 class="Main-h2">Onboarding</h2>
+
+    <div class="Onboarding-imagenes">
+      <img src="${proyecto.onboarding[0].src}" alt="${proyecto.onboarding[0].alt}" class="Onboarding-img">
+      <img src="${proyecto.onboarding[1].src}" alt="${proyecto.onboarding[1].alt}" class="Onboarding-img">
+      <img src="${proyecto.onboarding[2].src}" alt="${proyecto.onboarding[2].alt}" class="Onboarding-img">
+      <img src="${proyecto.onboarding[3].src}" alt="${proyecto.onboarding[3].alt}" class="Onboarding-img">
+ </div>
+      <div class="Onboarding-lightbox ">
+                    <button class="Onboarding-close">
+                        <svg class="Onboarding-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                          </svg>
+                    </button>
+                    <img  alt="imagenGrande" class="Onboarding-imagenGrande">
+                </div>
+            </section>
+
+
+  <section class="Prototipado" id="Seccion-prototipado">
+                <h2 class="Main-h2">Prototipado</h2>
+
+                <div class="Prototipado-imagenes">
+
+
+        <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img">
+                   
+
+     <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Prototipado-img">
+
+        <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Prototipado-img">
+                  
+    <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Prototipado-img">
+              
+        <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Prototipado-img">
+        <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Prototipado-img">
+        <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Prototipado-img">
+
+        <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Prototipado-img">
+
+         <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Prototipado-img">
+              
+           <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Prototipado-img">
+
+             <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Prototipado-img">
+
+                  <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Prototipado-img">
+
+
+
+
+
+
+
+
+
+                </div>
+            </section>
+            
+  
+
+
+
+              <section class="Main-contentDekstop">
+            <div class="Acordeon">
+
+                <section class="Acordeon-onboarding ">
+
+
+                    <div class="Acordeon-header">
+                        <h2 class="Acordeon-h2">Onboarding</h2>
+                    </div>
+
+                    <div class="Acordeon-contenido">
+                        <p class="Acordeon-onboardingP">
+                        </p>
+
+                        <div class="Acordeon-onboardingImagenes ">
+    <img src="${proyecto.onboarding[0].src}" alt="${proyecto.onboarding[0].alt}" class="Acordeon-onboardingImg">
+      <img src="${proyecto.onboarding[1].src}" alt="${proyecto.onboarding[1].alt}" class="Acordeon-onboardingImg">
+      <img src="${proyecto.onboarding[2].src}" alt="${proyecto.onboarding[2].alt}" class="Acordeon-onboardingImg">
+      <img src="${proyecto.onboarding[3].src}" alt="${proyecto.onboarding[3].alt}" class="Acordeon-onboardingImg">
+                            
+
+                        </div>
+                    </div>
+
+
+                </section>
+
+
+                <section class="Acordeon-prototipado">
+
+
+
+
+                    <div class="Acordeon-header">
+                        <h2 class="Acordeon-h2">Prototipado</h2>
+                    </div>
+
+
+
+
+    <div class="Acordeon-contenido">
+
+
+        <div class="Acordeon-prototipadoImagenes">
+
+
+        <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img">
+                   
+
+        <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Acordeon-prototipadoImg">
+
+        <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Acordeon-prototipadoImg">
+                  
+        <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Acordeon-prototipadoImg">
+              
+        <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Acordeon-prototipadoImg">
+
+        <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Acordeon-prototipadoImg">
+
+        <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Acordeon-prototipadoImg">
+              
+        <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Acordeon-prototipadoImg">
+
+        <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Acordeon-prototipadoImg">
+
+        <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Acordeon-prototipadoImg">
+
+                           
+
+        </div>
+
+
+
+    </div>
+
+                </section>
+
+
+
+                <section class="Acordeon-video ">
+
+
+                    <div class="Acordeon-header">
+                        <h2 class="Acordeon-h2">Video</h2>
+                    </div>
+
+
+                    <div class="Acordeon-contenido">
+                        <video src="./img/mattura/prototipado/video-mattura.mp4" class="Acordeon-videoVideo"
+                            controls></video>
+                    </div>
+
+
+                </section>
+
+            </div>
+        </section>
+
+    
     `
-}
+
+
+
+} else {
+    console.log("Proyecto no encontrado")
+};
+
+
+
+
+
+
+
+//Acordeon 
+
+
