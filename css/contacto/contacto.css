@@ -1,6 +1,15 @@
 
 
 
+h1 {
+    font-family: mattone-black;
+    font-size: 3rem;
+    color: var(--txt);
+    word-wrap: break-word;
+    letter-spacing: 2px;
+
+}
+
 input{
     all: unset;
 }
@@ -52,7 +61,7 @@ textarea{
     font-family: poppins;
     font-size: 0.8rem;
     padding: 0.5rem;
-    
+    border-radius: 4px 4px 0 0 ;
     color: var(--txt);
     border-bottom: 2px solid var(--txt);
     background-color: var(--primary);
@@ -120,7 +129,13 @@ textarea{
 }
 
 
-@media screen and (min-width: 650px) {
+/* ---------------------------- */
+/*          Tablet            */
+/* ---------------------------- */
+
+
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
 
     .Main-button {
 
@@ -132,3 +147,10 @@ textarea{
 
 
 }
+
+
+/* ---------------------------- */
+/*          Dekstop            */
+/* ---------------------------- */
+
+@media screen and (min-width:1024px) {}

@@ -42,14 +42,14 @@ const modeButtonDekstop = document.querySelector('#modeButtonDekstop');
 const modeButtons = document.querySelectorAll(".modeButton")
 
 
-const modes = ["u-lightMode","u-darkMode", "u-pinkMode", "u-greenMode"]; //array de los modos que dispone la web 
+const modes = ["u-lightMode", "u-darkMode", "u-pinkMode", "u-greenMode"]; //array de los modos que dispone la web 
 
 
 
 const iconButton = [
 
   //icono que aparece en lightmode, para cambiar a darkMode
-      ` <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  ` <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
     <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
   </svg>
   ` ,
@@ -96,11 +96,11 @@ modeButtons.forEach((button => {
     body.classList.remove(modes[index]);
 
 
-    
+
     //Añadimos un +1 al index para que vaya avanzando en el array en cada click, y así cambiar el modo, hasta reiniciarlo una vez llega al final 
-    
+
     index = (index + 1) % modes.length;   //modes es el array definido previamente
-    
+
     body.classList.add(modes[index]);
     button.innerHTML = iconButton[index];
 
@@ -116,9 +116,51 @@ modeButtons.forEach((button => {
 
 
 
+// ----------------------------------------
+//            Acordeón Footer
+// ----------------------------------------
+
+
+//1. Sleccionamos constanes y variables
+
+const btnFooter = document.querySelector("#Footer-btn");
+const contenido = document.querySelector(".Footer-contenido");
 
 
 
+//2. Le proporcionamos un evento de escucha tipo "click"
+
+btnFooter.addEventListener("click", () => {
+
+  contenido.classList.toggle("isActive");
+
+
+  if (contenido.classList.contains("isActive")) {
+
+    btnFooter.innerHTML = ` <div class="Footer-boton">
+    <svg class="Footer-desplegar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--txt)" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+</svg>
+</div>
+`;
+  } else {
+
+    btnFooter.innerHTML = `
+      <div class="Footer-boton" id = "Footer-btn">
+        <svg class="Footer-desplegar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--txt)" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+          </svg>
+     
+</div>
+      
+      `
+      ;
+  }
+
+
+
+
+});
 
 
 

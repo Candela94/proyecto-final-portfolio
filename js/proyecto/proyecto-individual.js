@@ -2,7 +2,8 @@
 
 //1. Definimos constantes y variables 
 
-const proyectos = [
+
+const proyectos_con_onboarding = [
 
     //Proyecto Mattura
     {
@@ -31,30 +32,30 @@ const proyectos = [
             { src: "imgs/mattura/producto.png", alt: "Imagen" },
             { src: "imgs/mattura/cartel-2.png", alt: "Imagen" },
             { src: "imgs/mattura/detalle.png", alt: "Imagen" },
-            
+
             { src: "imgs/mattura/trabajos.png", alt: "Imagen" },
-            { src: "imgs/mattura/portada.png", alt: "Imagen" }, 
+            { src: "imgs/mattura/portada.png", alt: "Imagen" },
             { src: "imgs/mattura/log-in.png", alt: "Imagen" },
             { src: "imgs/mattura/cartel-3.png", alt: "Imagen" },
             { src: "imgs/mattura/categorias.png", alt: "Imagen" },
 
-            
+
             { src: "imgs/mattura/cartel-4.png", alt: "Imagen" },
             { src: "imgs/mattura/contacto.png", alt: "Imagen" },
             { src: "imgs/mattura/imagen-estanteria.png", alt: "Imagen" },
             { src: "imgs/mattura/favs.png", alt: "Imagen" },
 
-        
+
 
         ],
 
         inicio: [
 
-          
+
             { src: "imgs/mattura/img-tronco.png", alt: "portada" },
             { src: "imgs/mattura/imagen-detalle.png", alt: "detalle2" },
             { src: "imgs/mattura/imagen-estanteria.png", alt: "detalle2" },
-           
+
 
         ],
     },
@@ -62,7 +63,7 @@ const proyectos = [
 
     //Proyecto cocozone
     {
-        id:2,
+        id: 2,
         h1: "cocozone",
         h2: "userexperiencie,gaming,UX/UI design",
         descripcion: " cocozone es una plataforma gaming en la que puedes comprar y vender juegos, y jugar online. Únete y forma parte de la comunidad coco!",
@@ -82,9 +83,9 @@ const proyectos = [
         ],
 
 
-           //Imagenes del proyecto
-           imagenes: [
-               { src: "imgs/cocos/chat.png", alt: "Imagen" },
+        //Imagenes del proyecto
+        imagenes: [
+            { src: "imgs/cocos/chat.png", alt: "Imagen" },
             { src: "imgs/cocos/cartel-1.png", alt: "Imagen" },
             { src: "imgs/cocos/perfil.png", alt: "Imagen" },
             { src: "imgs/cocos/cartel-3.png", alt: "Imagen" },
@@ -97,9 +98,9 @@ const proyectos = [
             { src: "imgs/cocos/cartel-5.png", alt: "Imagen" },
             { src: "imgs/cocos/filtrado.png", alt: "Imagen" },
             { src: "imgs/cocos/tus-juegos.png", alt: "Imagen" },
-           
+
             { src: "imgs/cocos/home.png", alt: "Imagen" },
-           
+
             { src: "imgs/cocos/registro1.png", alt: "Imagen" },
 
 
@@ -108,22 +109,21 @@ const proyectos = [
 
 
         //Imagenes del proyecto
-       
+
         inicio: [
 
-          
+
             { src: "imgs/cocos/portada-color.png", alt: "Imagen" },
             { src: "imgs/cocos/coco-2.jpg", alt: "Imagen" },
             { src: "imgs/cocos/coco1.jpg", alt: "Imagen" },
-           
+
 
         ],
 
 
     },
 
-
-
+    //Proyecto unavioska
 
     {
         id: 3,
@@ -133,44 +133,151 @@ const proyectos = [
         url: "",
 
 
-     
+
         //Imagenes del proyecto
         imagenes: [
-            { src: "imgs/vioska/anillos-macrame.png", alt: "Imagen" },
-            { src: "imgs/vioska/detalle-producto.png", alt: "Imagen" },
-            { src: "imgs/vioska/cartel-2.jpg", alt: "Imagen" },
-            { src: "imgs/vioska/pendientes-luna.jpg", alt: "Imagen" },
-            { src: "imgs/vioska/anillos-madera.jpg", alt: "Imagen" },
-            
-            { src: "imgs/vioska/trabajos.png", alt: "Imagen" },
-            { src: "imgs/vioska/portada.png", alt: "Imagen" }, 
-            { src: "imgs/vioska/log-in.png", alt: "Imagen" },
-            { src: "imgs/vioska/cartel-3.png", alt: "Imagen" },
-            { src: "imgs/vioska/categorias.png", alt: "Imagen" },
 
-            
-            { src: "imgs/vioska/cartel-4.png", alt: "Imagen" },
-            { src: "imgs/vioska/contacto.png", alt: "Imagen" },
-            { src: "imgs/vioska/imagen-estanteria.png", alt: "Imagen" },
-            { src: "imgs/vioska/favs.png", alt: "Imagen" },
+            { src: "imgs/vioska/anillos-macrame.png", alt: "anillos portada" },
+            { src: "imgs/vioska/detalle-producto.png", alt: "producto" },
+            { src: "imgs/vioska/cartel-2.jpg", alt: "cartel " },
+            { src: "imgs/vioska/pendientes-luna.jpg", alt: "pendientes luna" },
+            { src: "imgs/vioska/anillos-dorados.jpg", alt: "anillos dorados" },
 
-        
+            { src: "imgs/vioska/portada-unavioska.png", alt: "portada" },
+            { src: "imgs/vioska/detalle-producto.jpg", alt: "producto" },
+            { src: "imgs/vioska/cosmos-portada.png", alt: "cosmos" },
+            { src: "imgs/vioska/macrame-portada.jpg", alt: "portada" },
+            { src: "imgs/vioska/anillos-madera.jpg", alt: "anillos" },
+
+
+            { src: "imgs/vioska/detalle-colgante.jpg", alt: "Imagen" },
+            { src: "imgs/vioska/estrellas-madera.jpg", alt: "Imagen" },
+
+
+
+
 
         ],
 
         inicio: [
 
-          
-            { src: "imgs/mattura/img-tronco.png", alt: "portada" },
-            { src: "imgs/mattura/imagen-detalle.png", alt: "detalle2" },
-            { src: "imgs/mattura/imagen-estanteria.png", alt: "detalle2" },
-           
+
+            { src: "imgs/vioska/portada-vacia.png", alt: "portada" },
+            { src: "imgs/vioska/anillo-foto.jpg", alt: "anillo" },
+            { src: "imgs/vioska/anillo-foto-2.jpg", alt: "anillo" },
+
 
         ],
     },
 
 
+
+
+    //Proyecto rutea
+    {
+        id: 5,
+        h1: "RUTEA",
+        h2: "userexperiencie,landing page,UX/UI design",
+        descripcion: "Hazte socix de Rutea y hazte con una de sus furgonetas durante 25 días al año. Vive una aventura sobre ruedas.",
+        url: "",
+
+
+
+        //Imagenes del proyecto
+        imagenes: [
+            { src: "imgs/cocos/chat.png", alt: "Imagen" },
+            { src: "imgs/cocos/cartel-1.png", alt: "Imagen" },
+            { src: "imgs/cocos/perfil.png", alt: "Imagen" },
+            { src: "imgs/cocos/cartel-3.png", alt: "Imagen" },
+            { src: "imgs/cocos/cartel-4.png", alt: "Imagen" },
+
+            { src: "imgs/cocos/registro.png", alt: "Imagen" },
+            { src: "imgs/cocos/portada.png", alt: "Imagen" },
+            { src: "imgs/cocos/cartel-2.png", alt: "Imagen" },
+            { src: "imgs/cocos/minijuegos.png", alt: "Imagen" },
+            { src: "imgs/cocos/cartel-5.png", alt: "Imagen" },
+            { src: "imgs/cocos/filtrado.png", alt: "Imagen" },
+            { src: "imgs/cocos/tus-juegos.png", alt: "Imagen" },
+
+            { src: "imgs/cocos/home.png", alt: "Imagen" },
+
+            { src: "imgs/cocos/registro1.png", alt: "Imagen" },
+
+
+
+        ],
+
+
+        //Imagenes del proyecto
+
+        inicio: [
+
+
+            { src: "imgs/cocos/portada-color.png", alt: "Imagen" },
+            { src: "imgs/cocos/coco-2.jpg", alt: "Imagen" },
+            { src: "imgs/cocos/coco1.jpg", alt: "Imagen" },
+
+
+        ],
+
+
+    },
+
+
+
+     //Proyecto giftopia
+     {
+        id: 4,
+        h1: "GIFTOPIA",
+        h2: "userexperiencie,app,UX/UI design",
+        descripcion: " Disfruta del placer de regalar y ser regalado de manera anónima",
+        url: "",
+
+
+        //Imagenes del proyecto
+        imagenes: [
+            { src: "imgs/giftopia/home.png", alt: "Imagen" },
+            { src: "imgs/giftopia/cartel.png", alt: "Imagen" },
+            { src: "imgs/giftopia/perfil.png", alt: "Imagen" },
+            { src: "imgs/giftopia/cartel-2.png", alt: "Imagen" },
+            { src: "imgs/giftopia/cartel-4.png", alt: "Imagen" },
+
+            { src: "imgs/giftopia/detalle-producto.png", alt: "Imagen" },
+            { src: "imgs/giftopia/portada.png", alt: "Imagen" },
+            { src: "imgs/giftopia/cartel-2.png", alt: "Imagen" },
+            { src: "imgs/giftopia/minijuegos.png", alt: "Imagen" },
+            { src: "imgs/giftopia/cartel-5.png", alt: "Imagen" },
+            { src: "imgs/giftopia/filtrado.png", alt: "Imagen" },
+            { src: "imgs/giftopia/tus-juegos.png", alt: "Imagen" },
+
+            { src: "imgs/giftopia/home.png", alt: "Imagen" },
+
+            { src: "imgs/giftopia/registro1.png", alt: "Imagen" },
+
+
+
+        ],
+
+
+        //Imagenes del proyecto
+
+        inicio: [
+
+
+            { src: "imgs/cocos/portada-color.png", alt: "Imagen" },
+            { src: "imgs/cocos/coco-2.jpg", alt: "Imagen" },
+            { src: "imgs/cocos/coco1.jpg", alt: "Imagen" },
+
+
+        ],
+
+
+    },
+
 ];
+
+
+
 
 
 
@@ -182,25 +289,22 @@ const proyectoId = Number(urlParams.get("id"));//obtenemos el parámetro id de l
 console.log('este es mi proyecto ', proyectoId);
 
 const contenedorProyecto = document.querySelector("#Main-contenedorProyecto");
-const proyecto = proyectos.find(p => p.id == proyectoId);
 
-
-if(proyecto) {
-
-    contenedorProyecto.innerHTML =`
+const proyecto = proyectos_con_onboarding.find(p => p.id == proyectoId);
 
 
 
+function mostrarProyectos(proyecto){ contenedorProyecto.innerHTML = `
     <section class="Main-intro">
 
     <div class="Main-introduccionMobile">
         <div class="Main-imgLogo">
 
-            <img src="${proyecto.inicio[0].src}" alt="${proyecto.inicio[0].alt}" class="Main-img">
+            <img src='${proyecto.inicio[0].src}' alt='${proyecto.inicio[0].alt}' class="Main-img">
 
             <div class="Main-logoBoton">
                
-                <svg></svg>
+               
             </div> 
 
                  <div class="Main-descripcion">
@@ -269,6 +373,8 @@ if(proyecto) {
       <img src="${proyecto.onboarding[2].src}" alt="${proyecto.onboarding[2].alt}" class="Onboarding-img">
       <img src="${proyecto.onboarding[3].src}" alt="${proyecto.onboarding[3].alt}" class="Onboarding-img">
  </div>
+
+
       <div class="Onboarding-lightbox ">
                     <button class="Onboarding-close">
                         <svg class="Onboarding-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
@@ -286,28 +392,28 @@ if(proyecto) {
                 <div class="Prototipado-imagenes">
 
 
-        <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img">
                    
 
      <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Prototipado-img">
 
-        <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Prototipado-img">
                   
     <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Prototipado-img">
               
-        <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Prototipado-img">
-        <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Prototipado-img">
-        <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Prototipado-img">
 
-        <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Prototipado-img">
 
-         <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Prototipado-img">
               
-           <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Prototipado-img">
 
-             <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Prototipado-img">
 
-                  <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Prototipado-img">
 
 
 
@@ -323,8 +429,8 @@ if(proyecto) {
   
 
 
+<section class="Main-contentDekstop">
 
-              <section class="Main-contentDekstop">
             <div class="Acordeon">
 
                 <section class="Acordeon-onboarding ">
@@ -335,14 +441,12 @@ if(proyecto) {
                     </div>
 
                     <div class="Acordeon-contenido">
-                        <p class="Acordeon-onboardingP">
-                        </p>
 
                         <div class="Acordeon-onboardingImagenes ">
-    <img src="${proyecto.onboarding[0].src}" alt="${proyecto.onboarding[0].alt}" class="Acordeon-onboardingImg">
-      <img src="${proyecto.onboarding[1].src}" alt="${proyecto.onboarding[1].alt}" class="Acordeon-onboardingImg">
-      <img src="${proyecto.onboarding[2].src}" alt="${proyecto.onboarding[2].alt}" class="Acordeon-onboardingImg">
-      <img src="${proyecto.onboarding[3].src}" alt="${proyecto.onboarding[3].alt}" class="Acordeon-onboardingImg">
+                                <img src="${proyecto.onboarding[0].src}" alt="${proyecto.onboarding[0].alt}" class="Acordeon-onboardingImg">
+                                <img src="${proyecto.onboarding[1].src}" alt="${proyecto.onboarding[1].alt}" class="Acordeon-onboardingImg">
+                                <img src="${proyecto.onboarding[2].src}" alt="${proyecto.onboarding[2].alt}" class="Acordeon-onboardingImg">
+                                <img src="${proyecto.onboarding[3].src}" alt="${proyecto.onboarding[3].alt}" class="Acordeon-onboardingImg">
                             
 
                         </div>
@@ -360,8 +464,6 @@ if(proyecto) {
                     <div class="Acordeon-header">
                         <h2 class="Acordeon-h2">Prototipado</h2>
                     </div>
-
-
 
 
     <div class="Acordeon-contenido">
@@ -425,13 +527,192 @@ if(proyecto) {
         </section>
 
     
-    `
+                            `
+                            }
+
+
+function mostrarProyectosSinOnboarding(proyecto){ contenedorProyecto.innerHTML = `
+
+  <section class="Main-intro">
+
+    <div class="Main-introduccionMobile">
+        <div class="Main-imgLogo">
+
+            <img src='${proyecto.inicio[0].src}' alt='${proyecto.inicio[0].alt}' class="Main-img">
+
+            <div class="Main-logoBoton">
+               
+               
+            </div> 
+
+                 <div class="Main-descripcion">
+                  
+                </div>
+         
+           
+        </div>
+        </div>
+
+
+  <!-- ------------------------------ -->
+  <!--   INTRO VERSION DEKSTOP         -->
+  <!-- ------------------------------ -->
+
+   <div class="Main-introDekstop">
+
+
+            <div class="Main-textoImagenes">
+
+
+                <div class="Main-texto">
+
+                    <h1 class="Main-h1Dekstop">${proyecto.h1}</h1>
+                    <div class="Main-hastaghs">
+                        <h2 class="Main-h2Dekstop">#userexperience</h2>
+                        <h2 class="Main-h2Dekstop">${proyecto.h2}</h2>
+                        <h2 class="Main-h2Dekstop">#ux/ui</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="Main-imagenes">
+                    <img src="${proyecto.inicio[1].src}" alt="${proyecto.inicio[1].alt}" class="Main-imagenesIntro">
+                     <img src="${proyecto.inicio[2].src}" alt="${proyecto.inicio[2].alt}" class="Main-imagenesIntro">
+                   
+                </div>
+
+
+            </div>
 
 
 
+            <div class="Main-imagenPrincipal">
+               <img src="${proyecto.inicio[0].src}" alt="${proyecto.inicio[0].alt}" class = "Main-imagenPpal">
+              
+                <img src="">
+            </div>
+
+
+        </div>
+
+
+
+
+
+  <section class="Main-content">
+      
+
+
+  <section class="Prototipado" id="Seccion-prototipado">
+                <h2 class="Main-h2">Prototipado</h2>
+
+                <div class="Prototipado-imagenes">
+
+    <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img">
+                   
+
+     <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Prototipado-img">
+
+    <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Prototipado-img">
+                  
+    <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Prototipado-img">
+              
+    <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Prototipado-img">
+
+    <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Prototipado-img">
+
+    <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Prototipado-img">
+              
+    <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Prototipado-img">
+
+    <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Prototipado-img">
+
+    // <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Prototipado-img">
+
+
+                </div>
+            </section>
+            
+
+
+<section class="Main-contentDekstop">
+
+            <div class="Acordeon">
+
+              
+
+
+                <section class="Acordeon-prototipado">
+
+
+
+
+                    <div class="Acordeon-header">
+                        <h2 class="Acordeon-h2">Prototipado</h2>
+                    </div>
+
+
+    <div class="Acordeon-contenido">
+
+
+        <div class="Acordeon-prototipadoImagenes">
+
+
+        <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img">
+                   
+
+        <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Acordeon-prototipadoImg">
+
+        <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Acordeon-prototipadoImg">
+                  
+        <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Acordeon-prototipadoImg">
+              
+        <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Acordeon-prototipadoImg">
+
+        <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Acordeon-prototipadoImg">
+
+        <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Acordeon-prototipadoImg">
+              
+        <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Acordeon-prototipadoImg">
+
+        <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Acordeon-prototipadoImg">
+
+        <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Acordeon-prototipadoImg">
+
+                           
+
+        </div>
+
+
+
+    </div>
+
+                </section>
+
+
+`;
+}
+
+
+
+
+if (proyecto.imagenes && proyecto.onboarding) {
+    mostrarProyectos(proyecto);
 } else {
-    console.log("Proyecto no encontrado")
-};
+    mostrarProyectosSinOnboarding(proyecto);
+}
+
+mostrarProyectos(proyecto);
+mostrarProyectosSinOnboarding(proyecto);
+
+
+
+    
 
 
 
@@ -439,6 +720,7 @@ if(proyecto) {
 
 
 
-//Acordeon 
+
+
 
 

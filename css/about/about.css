@@ -62,12 +62,25 @@
 .Acordeon-contenido {
     display: none;
     
+     
+}
+
+
+
+.Acordeon-programasDiseno{
+
+
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-around;
    
-    
+
+
 }
 
 .Acordeon-imagenLogo{
-    width: 5%;
+    width: 8%;
 }
 
 
@@ -116,6 +129,16 @@
 }
 
 
+
+
+.Acordeon-ulDigital{
+    display: flex;
+}
+
+
+
+
+
 .Acordeon-ul li{
     list-style: none;
 }
@@ -151,10 +174,12 @@ opacity: 1;
 
 
 
+/* ---------------------------- */
+/*          Tablet            */
+/* ---------------------------- */
 
 
-
-@media screen and (max-width: 649px) {
+@media screen and (min-width:768px) and (max-width: 1023px) {
 
 
 
@@ -170,9 +195,11 @@ opacity: 1;
 }
 
 
+/* ---------------------------- */
+/*          Dekstop            */
+/* ---------------------------- */
 
-
-@media screen and (min-width: 650px) {
+@media screen and (min-width:1024px) {
 
 
 

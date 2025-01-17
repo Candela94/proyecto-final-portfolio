@@ -4,17 +4,16 @@
 
 const lista_imagenes = [
 
-    {file: "./img/mockups/mattura-mockup.png", descripcion: "mattura" },
+    {file: "./imgs/slider-imgs/mattura-slider.png", descripcion: "mattura" },
     
-    {file: "./img/mockups/rutea-mockup.png", descripcion: "unavioska" },
+    {file: "./imgs/slider-imgs/rutea-slider.png", descripcion: "rutea" },
     
-    {file: "./img/mockups/rutea-mockup.png", descripcion: "rutea" },
+    {file: "./imgs/slider-imgs/vioska-slider.png", descripcion: "vioska" },
     
-    {file: "img/mockups/mattura-mockup.png", descripcion: "music" },
     
-    {file: "./img/mockups/cocos-mockup.png", descripcion: "cocos" },
+    {file: "./imgs/slider-imgs/coco-slider.png", descripcion: "cocos" },
     
-    {file: "./img/mockups/gifto-mockup.png", descripcion: "giftopia" },
+    {file: "./imgs/slider-imgs/giftopia-slider.png", descripcion: "giftopia" },
     
     
     ];

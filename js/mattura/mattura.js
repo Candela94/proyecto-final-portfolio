@@ -5,13 +5,14 @@
 //---------------------------
 
 const headers = document.querySelectorAll(".Acordeon-header");
-const contenido = document.querySelectorAll(".Acordeon-contenido");
+
 
 
 
 // --------------------------
 //   Funciones y listeners
 //---------------------------
+
 
 headers.forEach((header) => {
 
@@ -47,3 +48,4 @@ headers.forEach((header) => {
     });
 
 });
+

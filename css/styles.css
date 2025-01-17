@@ -1,6 +1,3 @@
-
-
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,25 +5,25 @@
 
 }
 
-h1{
+h1 {
     font-family: mattone-black;
     font-size: 4rem;
     color: var(--txt);
     word-wrap: break-word;
     letter-spacing: 2px;
-  
+
 }
 
-.Body{
+.Body {
 
     font-family: poppins;
     display: flex;
     flex-direction: column;
-   
+
     background-color: var(--primary);
     scroll-behavior: smooth;
     color: var(--txt);
- 
+
 
 }
 
@@ -48,10 +45,10 @@ a {
 
     --primary: #fcf9f1;
     --secondary: #BF9FEC;
-    --terciary:#2E2E2E;
+    --terciary: #2E2E2E;
 
-    --txt: #2E2E2E;  
-    
+    --txt: #2E2E2E;
+
 
 
 }
@@ -67,15 +64,15 @@ a {
 /*          Light mode      */
 /* ------------------------- */
 
-.u-lightMode{
+.u-lightMode {
 
     --primary: #fcf9f1;
     --secondary: #BF9FEC;
-    --terciary:#2E2E2E;
+    --terciary: #2E2E2E;
 
-    --txt: #2E2E2E;  
-   
-   
+    --txt: #2E2E2E;
+
+
 
 
 }
@@ -86,12 +83,12 @@ a {
 /* ------------------------- */
 
 
-.u-darkMode{
+.u-darkMode {
 
---primary: #352D31;
---secondary: #FEBAD0;
---terciary:#ebb7c7;
---txt: #F1EBDD;
+    --primary: #352D31;
+    --secondary: #FEBAD0;
+    --terciary: #ebb7c7;
+    --txt: #F1EBDD;
 
 
 
@@ -103,12 +100,12 @@ a {
 /* ------------------------- */
 
 
-.u-pinkMode{
+.u-pinkMode {
     --primary: #3C8669;
     --secondary: #FFAECF;
-    --terciary:#1b1b1b; 
+    --terciary: #1b1b1b;
     --txt: #F7EFE2;
-    
+
 }
 
 
@@ -116,13 +113,13 @@ a {
 /*       Green mode           */
 /* ------------------------- */
 
-.u-greenMode{
+.u-greenMode {
 
     --primary: #97A75B;
     --secondary: #FDA6DC;
-    --terciary:#f4e72f;
+    --terciary: #f4e72f;
     --txt: #fbee37;
- 
+
 }
 
 
@@ -170,7 +167,7 @@ a {
 /* Header version mobile  */
 
 
-.Header{
+.Header {
 
     display: flex;
     width: 100%;
@@ -185,36 +182,37 @@ a {
     position: sticky;
     top: 0;
     z-index: 1;
-    
+
 
 }
 
 
 
-.Header-navDekstop{
+.Header-navDekstop {
     display: none;
 }
 
 
 
 
-.Logo{
+.Logo {
     width: 26px;
 }
 
-.Header-ul{
+.Header-ul {
     display: flex;
     gap: 24px;
     align-items: center;
 }
 
 
-.Header-ul li{
-    
+.Header-ul li {
+
     list-style: none;
-  
+
 }
-.Header-li{
+
+.Header-li {
     display: flex;
     justify-content: space-between;
 }
@@ -228,22 +226,15 @@ a {
 
 /* estilos para el botón cambio de modo */
 
-#btnMenu{
-    font-size: 2.5rem;
-    color: var(--txt);
-    border: none;
-    background: none;
-    cursor: pointer;
-}
 
 
 
-.Main-modeButton{
+.Main-modeButton {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
-.Main-modeButton:active{
+.Main-modeButton:active {
     transform: scale(0.7);
 }
 
@@ -251,17 +242,34 @@ a {
 
 
 
+#btnMenu {
+    font-size: 2.5rem;
+    color: var(--txt);
+    border: none;
+    background: none;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#btnMenu:active {
+    transform: scale(0.7);
+}
+
+
+
+
 /* Menú desplegable versión mobile */
-.Header-menu{
+.Header-menu {
 
 
-    position: absolute; 
+    position: absolute;
     top: 100px;
-    right: -500px; 
-    box-shadow:0 1px 1px var(--secondary );
+    right: -500px;
+    box-shadow: 0 1px 1px var(--secondary);
     background-color: var(--primary);
 
-    
+
     transition: right 0.8s ease;
 
     padding: 2rem;
@@ -275,26 +283,26 @@ a {
     right: 0px;
 }
 
-.Header-close{
+.Header-close {
     width: 16px;
     border: none;
     background: none;
-   
+
 }
 
 
 
-.Header-ulMenu li{
+.Header-ulMenu li {
 
     list-style: none;
     padding-top: 16px;
-    padding-bottom:8px ;
-   
+    padding-bottom: 8px;
+
     border-bottom: solid 0.5px var(--txt);
     color: var(--txt);
 }
 
-.Header-ulMenu li svg{
+.Header-ulMenu li svg {
     width: 14px;
 }
 
@@ -308,62 +316,60 @@ a {
 
 
 
-.Main{
+.Main {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100vh;
- 
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-.Footer{
-
-  width: 100%;
-padding: 1rem 2.5rem;
-border-radius: 20px 0px 0px 0px;
-background-color: var(--secondary);
-border-top: 3px solid var(--txt);
-position: fixed;
-bottom: 0;
 
 
 }
 
-.Footer-navDekstop{
+
+
+
+
+
+
+.Footer {
+
+    width: 100%;
+    padding: 1rem 2.5rem;
+    border-radius: 20px 0px 0px 0px;
+    background-color: var(--secondary);
+    border-top: 3px solid var(--txt);
+    position: fixed;
+    bottom: 0;
+
+
+}
+
+.Footer-navDekstop, .Footer-boton {
     display: none;
 }
 
-.Footer-nav{
+
+
+.Footer-nav {
     width: 100%;
- 
-   
-   
+
+
+
 }
 
 
 
-.Footer-ul{
- 
+.Footer-ul {
+
     display: flex;
     justify-content: space-between;
 }
 
-.Footer-ul li{
+.Footer-ul li {
     list-style: none;
 }
 
-.Footer-svg{
+.Footer-svg {
     width: 32px;
     color: var(--primary);
 }
@@ -388,61 +394,96 @@ bottom: 0;
 .Main-modeButton svg {
     color: var(--primary);
     width: 20px;
-   
+    transition: transform 0.3s ease;
+
+}
+
+
+.Main-modeButton svg:active {
+
+    transform: scale(0.7);
+}
+
+/* ---------------------------- */
+/* Layout versión tablet */
+/* ---------------------------- */
+
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+
+    h1 {
+        font-weight: 900;
+        font-size: 5rem;
+    }
+
+
+
+
+
+    .Footer-ulDekstop li {
+        font-size: px;
+        list-style: none;
+        cursor: pointer;
+    }
+
 
 }
 
 
 
 
-/* Header version dekstop */
 
 
-@media screen and (min-width: 650px) {
+/* ---------------------------- */
+/* Layout versión dekstop */
+/* ---------------------------- */
+
+@media screen and (min-width:1024px) {
 
 
-    h1{
+    h1 {
         font-weight: 900;
         font-size: 8rem;
     }
 
 
-   
 
 
-    .Header-nav, .Header-menu{
+
+    .Header-nav,
+    .Header-menu {
         display: none;
     }
 
 
-   .Header-navDekstop{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    gap: 2rem;
-   
-   
-   }
+    .Header-navDekstop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+
+
+    }
 
 
 
 
-    .Header-ulDekstop{
+    .Header-ulDekstop {
         display: flex;
         justify-content: center;
         width: 100%;
         gap: 6rem;
         font-family: mattone-regular;
         color: var(--txt);
-        
+
     }
 
 
 
 
 
-    .Header-ulDekstop li{
+    .Header-ulDekstop li {
         list-style: none;
         position: relative;
         transition: transform 0.3s ease-in;
@@ -452,22 +493,22 @@ bottom: 0;
 
 
 
-    .Header-ulDekstop li:active{
+    .Header-ulDekstop li:active {
         transform: scale(0.7);
 
     }
 
 
-    .Header-ulDekstop li a{
+    .Header-ulDekstop li a {
 
-       text-decoration: none;
-       padding-bottom: 6px;
-       position: relative;
+        text-decoration: none;
+        padding-bottom: 6px;
+        position: relative;
 
     }
 
 
-    /* Pseudo elemento para la linea  */
+    /* Pseudo elemento para la linea. Animación mencionada en la memoria  */
     .Header-ulDekstop li a::after {
 
         content: '';
@@ -482,7 +523,7 @@ bottom: 0;
     }
 
 
-    .Header-ulDekstop li a:hover::after{
+    .Header-ulDekstop li a:hover::after {
         width: 100%;
     }
 
@@ -490,27 +531,27 @@ bottom: 0;
 
 
 
-    .Header-icons{
+    .Header-icons {
         display: flex;
         align-items: center;
         gap: 28px;
     }
 
 
-    .Header-ulIcons{
+    .Header-ulIcons {
         display: flex;
         align-items: center;
         gap: 32px;
-      
+
         padding: 1rem 2rem;
         border-radius: 20px;
     }
 
-    .Header-ulIcons li{
-        list-style:none;
+    .Header-ulIcons li {
+        list-style: none;
     }
 
-    .Header-liIcons i{
+    .Header-liIcons i {
         font-size: 18px;
         color: var(--txt);
         transition: color 0.3s ease, transform 0.3s ease;
@@ -519,46 +560,90 @@ bottom: 0;
 
 
 
-    .Header-liIcons i:hover{
-       color: blue;
-       transform: scale(1.15);
+    .Header-liIcons i:hover {
+        color: rgb(95, 95, 215);
+        transform: scale(1.15);
 
     }
 
 
 
-.Main{
-    padding: 1em;
-}
-
-
-
-
-
-
-
-
-
-    .Footer{
-        position: static;
+    .Main {
+        padding: 1em;
     }
 
 
-    
-    .Footer-nav{
+
+
+
+
+
+    .Footer {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+
+
+
+    .Footer-nav {
         display: none;
     }
 
 
-   
 
-    .Footer-navDekstop{
+
+/* Acordeon Footer */
+
+
+
+    .Footer-boton {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .Footer-desplegar {
+        width: 28px;
+    }
+
+
+
+
+
+
+    .Footer-contenido {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease;
+     
+     
+ 
+    }
+
+
+
+    .Footer-contenido.isActive {
+        max-height: 500px;
+        overflow: visible;
+       
+    }
+
+
+
+
+
+    .Footer-navDekstop {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 0 4rem;
     }
 
-    .Footer-ulDekstop{
+    .Footer-ulDekstop {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
@@ -566,29 +651,13 @@ bottom: 0;
 
 
 
-    .Footer-ulDekstop li{
+    .Footer-ulDekstop li {
         font-size: 12px;
         list-style: none;
         cursor: pointer;
     }
 
 
-};
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+;
