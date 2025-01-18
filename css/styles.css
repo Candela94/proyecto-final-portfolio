@@ -602,6 +602,7 @@ a {
         width: 100%;
         display: flex;
         justify-content: center;
+        cursor: pointer;
     }
 
 
@@ -616,9 +617,8 @@ a {
 
 
     .Footer-contenido {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 1s ease;
+      display: none;
+      transition: all 1s ease;
      
      
  
@@ -627,8 +627,7 @@ a {
 
 
     .Footer-contenido.isActive {
-        max-height: 500px;
-        overflow: visible;
+      display: block;
        
     }
 

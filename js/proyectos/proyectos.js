@@ -8,17 +8,17 @@
 const proyectos = [
 
 
-    { title: "Mattura", description: "Mattura", alt: "Mattura", file: "img/mattura/portadaImagen (2).png", logo: "img/logos/mattura-logo-blanco.png", description: "imagen 1", url: "mattura.html" },
+    { title: "Mattura", description: "Mattura", alt: "Mattura", file: "img/mattura/portadaImagen (2).png", logo: "img/logos/mattura-logo-blanco.png", description: "imagen 1", url: "http://127.0.0.1:5500/proyecto-individual.html?id=1" },
 
-    { title: "Rutea", description: "Rutea", alt: "Rutea", file: "img/rutea/portada.webp", logo: "img/logos/logo-rutea-blanco.png", description: "imagen 2", url: "rutea.html" },
+    { title: "Rutea", description: "Rutea", alt: "Rutea", file: "img/rutea/portada.webp", logo: "img/logos/logo-rutea-blanco.png", description: "imagen 2", url: "http://127.0.0.1:5500/proyecto-individual.html?id=5" },
 
-    { title: "unavioska.", description: "unavioska.", alt: "unavioska.", file: "img/vioska/6 (1)_optimized_.webp", logo: "img/logos/una-vioska-blanco.png", description: "imagen 3", url: "una-vioska.html" },
+    { title: "unavioska.", description: "unavioska.", alt: "unavioska.", file: "img/vioska/6 (1)_optimized_.webp", logo: "img/logos/una-vioska-blanco.png", description: "imagen 3", url: "http://127.0.0.1:5500/proyecto-individual.html?id=3" },
 
     
 
-    { title: "cocoZone", description: "cocoZone", alt: "cocoZone", file: "img/cocos/portada-color.webp", logo: "img/logos/cocos-logo.png", description: "imagen 4", url: "cocos.html" },
+    { title: "cocoZone", description: "cocoZone", alt: "cocoZone", file: "img/cocos/portada-color.webp", logo: "img/logos/cocos-logo.png", description: "imagen 4", url: "http://127.0.0.1:5500/proyecto-individual.html?id=2" },
 
-    { title: "Giftopia", description: "Giftopia", alt: "Giftopia", file: "img/giftopia/portada-princi.png", logo: "img/logos/giftopia-logo-rosa.png", description: "imagen 5", url: "giftopia.html" },
+    { title: "Giftopia", description: "Giftopia", alt: "Giftopia", file: "img/giftopia/portada-princi.png", logo: "img/logos/giftopia-logo-rosa.png", description: "imagen 5", url: "http://127.0.0.1:5500/proyecto-individual.html?id=4" },
 
 ];
 

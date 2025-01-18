@@ -213,8 +213,8 @@ const proyectos_con_onboarding = [
         inicio: [
 
 
-            { src: "imgs/cocos/portada-color.png", alt: "Imagen" },
-            { src: "imgs/cocos/coco-2.jpg", alt: "Imagen" },
+            { src: "imgs/rutea/portada-rutea.png", alt: "Imagen" },
+            { src: "imgs/rutea/detalle-rutea.jpg", alt: "Imagen" },
             { src: "imgs/cocos/coco1.jpg", alt: "Imagen" },
 
 
@@ -294,7 +294,13 @@ const proyecto = proyectos_con_onboarding.find(p => p.id == proyectoId);
 
 
 
-function mostrarProyectos(proyecto){ contenedorProyecto.innerHTML = `
+//3. Definición de funciones
+
+//Función mostrarProyectos para mostrar los proyectos que tienen 2 secciones en el acordeón
+
+function mostrarProyectos(proyecto){ 
+    
+    contenedorProyecto.innerHTML = `
     <section class="Main-intro">
 
     <div class="Main-introduccionMobile">
@@ -530,8 +536,10 @@ function mostrarProyectos(proyecto){ contenedorProyecto.innerHTML = `
                             `
                             }
 
-
-function mostrarProyectosSinOnboarding(proyecto){ contenedorProyecto.innerHTML = `
+//Función mostrarProyectosSinOnboarding para mostrar los proyectos que tienen únicamente la sección de prototipado
+function mostrarProyectosSinOnboarding(proyecto){ 
+    
+    contenedorProyecto.innerHTML = `
 
   <section class="Main-intro">
 
@@ -612,7 +620,7 @@ function mostrarProyectosSinOnboarding(proyecto){ contenedorProyecto.innerHTML =
     <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img">
                    
 
-     <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Prototipado-img">
 
     <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Prototipado-img">
                   
@@ -700,6 +708,8 @@ function mostrarProyectosSinOnboarding(proyecto){ contenedorProyecto.innerHTML =
 
 
 
+//4. Establecemos las condiciones para mostrar una función u otra
+
 
 if (proyecto.imagenes && proyecto.onboarding) {
     mostrarProyectos(proyecto);
@@ -707,8 +717,12 @@ if (proyecto.imagenes && proyecto.onboarding) {
     mostrarProyectosSinOnboarding(proyecto);
 }
 
-mostrarProyectos(proyecto);
+
+
+//5. Ejecutamos la función
+
 mostrarProyectosSinOnboarding(proyecto);
+mostrarProyectos(proyecto);
 
 
 

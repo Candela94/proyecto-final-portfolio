@@ -3,14 +3,16 @@
 
 
 .Main{
-    margin: 1rem;
+   
     padding: 1rem;
+    margin-bottom: 7rem;
 }
 
 
 
 .Main-slider {
     display: none;
+    
 }
 
 
@@ -23,7 +25,8 @@
     display: flex;
     gap: 16px;
     overflow-x: scroll;
-    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+   
     scroll-snap-type: x proximity;
 }
 
@@ -113,25 +116,24 @@
 
 
 
+/* ---------------------------- */
+/*          Tablet            */
+/* ---------------------------- */
+
+
+@media screen and (min-width:768px) and (max-width: 1023px) {}
 
 
 
 
 
 
+/* ---------------------------- */
+/*          Dekstop            */
+/* ---------------------------- */
 
-
-
-
-
-@media screen and (min-width: 650px) {
-
+@media screen and (min-width:1024px) {
    
-
-
-
-
-  
 
 
 

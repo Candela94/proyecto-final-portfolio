@@ -24,10 +24,11 @@ textarea{
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1.5rem;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     flex-wrap: wrap;
 
 
@@ -153,4 +154,21 @@ textarea{
 /*          Dekstop            */
 /* ---------------------------- */
 
-@media screen and (min-width:1024px) {}
+@media screen and (min-width:1024px) {
+
+
+
+.Main{
+    height: 100vh;
+    margin-bottom: 2rem;
+}
+
+.Main-h1{
+    font-size: 7rem;;
+}
+
+.Main-button{
+    width: 30%;
+}
+
+}
