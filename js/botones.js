@@ -42,7 +42,7 @@ const modeButtonDekstop = document.querySelector('#modeButtonDekstop');
 const modeButtons = document.querySelectorAll(".modeButton")
 
 
-const modes = ["u-lightMode", "u-darkMode", "u-pinkMode", "u-greenMode"]; //array de los modos que dispone la web 
+const modes = ["u-lightMode", "u-ruteaMode", "u-pinkMode", "u-matturaMode","u-cocoMode"]; //array de los modos que dispone la web 
 
 
 
@@ -102,7 +102,7 @@ modeButtons.forEach((button => {
     index = (index + 1) % modes.length;   //modes es el array definido previamente
 
     body.classList.add(modes[index]);
-    button.innerHTML = iconButton[index];
+   
 
 
   });

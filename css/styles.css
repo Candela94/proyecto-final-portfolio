@@ -43,11 +43,13 @@ a {
 :root {
 
 
+    font-size: 14px;
     --primary: #fcf9f1;
     --secondary: #BF9FEC;
     --terciary: #2E2E2E;
 
     --txt: #2E2E2E;
+    --txt-secondary: #515151;
 
 
 
@@ -71,6 +73,7 @@ a {
     --terciary: #2E2E2E;
 
     --txt: #2E2E2E;
+    --txt-secondary:#fcf9f1;
 
 
 
@@ -83,12 +86,13 @@ a {
 /* ------------------------- */
 
 
-.u-darkMode {
+.u-ruteaMode {
 
-    --primary: #352D31;
-    --secondary: #FEBAD0;
-    --terciary: #ebb7c7;
-    --txt: #F1EBDD;
+    --primary: #222222;
+    --secondary: #EA8615;
+    --terciary: #EA8615;
+    --txt: rgba(242, 239, 234, 0.8);
+    --txt-secondary: #222222;
 
 
 
@@ -101,10 +105,11 @@ a {
 
 
 .u-pinkMode {
-    --primary: #3C8669;
-    --secondary: #FFAECF;
-    --terciary: #1b1b1b;
-    --txt: #F7EFE2;
+    --primary: #F3D2E4;
+    --secondary: #B6355B;
+    --terciary: #B6355B;
+    --txt: #2E2E2E;
+    --txt-secondary: #FAF0F5;
 
 }
 
@@ -113,16 +118,25 @@ a {
 /*       Green mode           */
 /* ------------------------- */
 
-.u-greenMode {
+.u-matturaMode {
 
-    --primary: #97A75B;
-    --secondary: #FDA6DC;
-    --terciary: #f4e72f;
-    --txt: #fbee37;
+    --primary: #fcf9f1;
+    --secondary: #33332D;
+    --terciary: #33332D;
+    --txt: #33332D;
+    --txt-secondary: #fcf9f1;
 
 }
 
 
+
+.u-cocoMode{
+    --primary: #454344;
+    --secondary: #5BF7DF;
+    --terciary: #F22D97;
+    --txt: #454344;
+    --txt-secondary: rgba(242, 239, 234, 0.8);
+}
 
 
 
@@ -173,11 +187,11 @@ a {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 2em;
+    padding: 0.5rem 2rem;
     /* background-color: var(--secondary); */
-    color: var(--txt);
+    color: var(--txt-secondary);
     background: var(--primary);
-    border-bottom: 3px solid var(--txt);
+    border-bottom: 3px solid var(--secondary);
     border-radius: 0 0 0 50px;
     position: sticky;
     top: 0;
@@ -220,16 +234,20 @@ a {
 
 
 
-
-
-
-
 /* estilos para el botón cambio de modo */
 
 
 
 
 .Main-modeButton {
+
+    font-family: poppins;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 2px solid var(--txt);
+    color: var(--txt);
+    background: none;
+
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -242,19 +260,6 @@ a {
 
 
 
-#btnMenu {
-    font-size: 2.5rem;
-    color: var(--txt);
-    border: none;
-    background: none;
-
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-#btnMenu:active {
-    transform: scale(0.7);
-}
 
 
 
@@ -274,7 +279,7 @@ a {
 
     padding: 2rem;
     width: 300px;
-    border: solid 0.5px black;
+    border: solid 3px var(--txt);
     border-radius: 4px 0px 0px 4px;
     z-index: 1;
 }
@@ -383,13 +388,7 @@ a {
     justify-content: center;
 }
 
-.Main-modeButton {
-    border: none;
-    background-color: var(--secondary);
-    padding: 14px;
-    border-radius: 20px;
 
-}
 
 .Main-modeButton svg {
     color: var(--primary);
@@ -411,12 +410,20 @@ a {
 
 @media screen and (min-width:768px) and (max-width: 1023px) {
 
+:root{
+    font-size: 16px;
+}
+
+
+
     h1 {
         font-weight: 900;
         font-size: 5rem;
     }
 
-
+.Footer-navDekstop{
+    color: var(--primary);
+}
 
 
 
@@ -441,6 +448,13 @@ a {
 @media screen and (min-width:1024px) {
 
 
+    :root{
+        font-size: 16px;
+    }
+
+
+
+    
     h1 {
         font-weight: 900;
         font-size: 8rem;
@@ -617,8 +631,9 @@ a {
 
 
     .Footer-contenido {
-      display: none;
-      transition: all 1s ease;
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 1s ease, opacity 0.5s ease;
      
      
  
@@ -627,7 +642,8 @@ a {
 
 
     .Footer-contenido.isActive {
-      display: block;
+     max-height: 300px;
+     opacity: 1;
        
     }
 

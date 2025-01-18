@@ -37,8 +37,9 @@
 
 .Main-h1{
     
-   font-size: 2.7rem;
+    font-size: 2.7rem;
     word-wrap: break-word;
+    color: var(--primary);
 
 }
 
@@ -47,7 +48,7 @@
 
 .Main-h2{
     font-family: mattone-bold;
-    color: var(--txt);
+    color: var(--primary);
    text-align: end;
     width: 100%;
     word-wrap: break-word;
@@ -57,7 +58,7 @@
 .Main-h2Diseno{
     font-family: mattone-bold;
     font-size: 20px;
-    color: var(--secondary);
+    color: var(--txt);
     width: 100%;
     word-wrap: break-word;
 }
@@ -71,7 +72,7 @@
     flex-direction: column;
     background-color: var(--secondary);
     border-radius: 10px;
-    border: solid 3px var(--txt);
+    border: solid 3px var(--primary);
     padding: 1rem;
 
 }

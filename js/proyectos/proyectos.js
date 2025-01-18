@@ -8,17 +8,17 @@
 const proyectos = [
 
 
-    { title: "Mattura", description: "Mattura", alt: "Mattura", file: "img/mattura/portadaImagen (2).png", logo: "img/logos/mattura-logo-blanco.png", description: "imagen 1", url: "http://127.0.0.1:5500/proyecto-individual.html?id=1" },
+    { title: "Mattura", description: "Mattura", alt: "Mattura", file:"imgs/portadas/mattura-portada.png" , logo: "Mattura", description: "e-commerce, sostenibilidad", url: "http://127.0.0.1:5500/proyecto-individual.html?id=1" },
 
-    { title: "Rutea", description: "Rutea", alt: "Rutea", file: "img/rutea/portada.webp", logo: "img/logos/logo-rutea-blanco.png", description: "imagen 2", url: "http://127.0.0.1:5500/proyecto-individual.html?id=5" },
+    { title: "Rutea", description: "Rutea", alt: "Rutea", file: "imgs/portadas/portada-rutea.png", logo: "Rutea", description: "imagen 2", url: "http://127.0.0.1:5500/proyecto-individual.html?id=5" },
 
-    { title: "unavioska.", description: "unavioska.", alt: "unavioska.", file: "img/vioska/6 (1)_optimized_.webp", logo: "img/logos/una-vioska-blanco.png", description: "imagen 3", url: "http://127.0.0.1:5500/proyecto-individual.html?id=3" },
+    { title: "unavioska.", description: "unavioska.", alt: "unavioska.", file:"imgs/portadas/portada-unavioska.png" , logo: "unavioska.", description: "imagen 3", url: "http://127.0.0.1:5500/proyecto-individual.html?id=3" },
 
     
 
-    { title: "cocoZone", description: "cocoZone", alt: "cocoZone", file: "img/cocos/portada-color.webp", logo: "img/logos/cocos-logo.png", description: "imagen 4", url: "http://127.0.0.1:5500/proyecto-individual.html?id=2" },
+    { title: "cocoZone", description: "cocoZone", alt: "cocoZone", file:"imgs/portadas/cocos-portada.jpg" , logo: "cocozone", description: "imagen 4", url: "http://127.0.0.1:5500/proyecto-individual.html?id=2" },
 
-    { title: "Giftopia", description: "Giftopia", alt: "Giftopia", file: "img/giftopia/portada-princi.png", logo: "img/logos/giftopia-logo-rosa.png", description: "imagen 5", url: "http://127.0.0.1:5500/proyecto-individual.html?id=4" },
+    { title: "Giftopia", description: "Giftopia", alt: "Giftopia", file:"imgs/portadas/portada-giftopia.png" , logo: "Giftopia", description: "imagen 5", url: "http://127.0.0.1:5500/proyecto-individual.html?id=4" },
 
 ];
 
@@ -114,8 +114,7 @@ function mostrarCards() {
         card.innerHTML = `
 
                         <div class = "Card-btnLogo">
-                            <img class = "Card-logo" src = "${proyecto.logo}" alt = "${proyecto.alt}">
-
+                           <p class="Card-logo">${proyecto.logo}</p>
                             <button class = "Card-button"> Ver proyecto
                             
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -162,8 +161,21 @@ btnSig.addEventListener('click', () => {
 
 
     if (paginaActual < 2) {
-        paginaActual++;
+        const cards = slider.querySelectorAll('.Main-card');
+        cards.forEach(card => card.classList.add('salir')); //Añade la animación diseñada en css 
+        
+        setTimeout(() => {
+
+         paginaActual++;
         mostrarCards();
+
+        const newCards = slider.querySelectorAll('.Main-card');
+        newCards.forEach(card => card.classList.add('entrar'));
+
+
+        },500);
+        
+      
     }
 
 });
@@ -171,10 +183,27 @@ btnSig.addEventListener('click', () => {
 
 btnAnt.addEventListener('click', () => {
 
+
+
     if (paginaActual > 1) {
-        paginaActual--;
+        const cards = slider.querySelectorAll('.Main-card');
+        cards.forEach(card => card.classList.add('entrar')); //Añade la animación diseñada en css 
+        
+        setTimeout(() => {
+
+         paginaActual--;
         mostrarCards();
+
+        const newCards = slider.querySelectorAll('.Main-card');
+        newCards.forEach(card => card.classList.add('salir'));
+
+
+        },500);
+        
+      
     }
+    
+    
 
 });
 

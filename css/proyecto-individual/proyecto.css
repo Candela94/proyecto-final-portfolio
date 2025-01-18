@@ -18,8 +18,9 @@
 
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     height: 100vh;
+    padding-bottom: 2rem;
  
 
 }
@@ -126,9 +127,9 @@
     margin: 1rem;
 }
 
-.Main-p {
+.Main-descripcionP {
     text-align: center;
-    font-size: 16px;
+   
 }
 
 
@@ -142,6 +143,10 @@
     gap: 0.5em;
     margin: 1rem;
     
+}
+
+.Prototipado{
+    margin-bottom: 3rem;
 }
 
 
@@ -283,13 +288,13 @@ pointer-events: auto;
 }
 
 
-.Prototipado-imgLanding{
+/* .Prototipado-imgHorizontal{
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     border-radius: 8px;
     aspect-ratio: 16/9;
-}
+} */
 
 
 
@@ -315,7 +320,8 @@ pointer-events: auto;
     .Onboarding,
     .Prototipado,
     .Video,
-    .Main-introduccionMobile {
+    .Main-introduccionMobile,
+    .Main-descripcion {
         display: none;
     }
 
@@ -457,12 +463,12 @@ pointer-events: auto;
         padding: 16px 0px;
         border-bottom: 0.3px solid var(--secondary);
         cursor: pointer;
-        transition: font-size 0.3s ease-in, color 0.3s ease-in, border-bottom 0.3s ease-in;
+        transition: color 0.3s ease-in, border-bottom 0.3s ease-in;
     }
 
 
     .Acordeon-h2:hover {
-        font-size: 62px;
+      
         color: var(--secondary);
         border-bottom: 0.5px solid var(--txt);
       
@@ -492,7 +498,16 @@ pointer-events: auto;
 
 
 
+    .Acordeon-descripcion{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
 
+
+    .Acordeon-descripcionP{
+        text-align: center;
+    }
 
 
     .Acordeon-onboardingImg {
@@ -556,7 +571,7 @@ pointer-events: auto;
 
 
 
-    .Acordeon-prototipadoImgHorizontal {
+    .Acordeon-imgHorizontal {
 
         width: 100%;
         height: 100%;
