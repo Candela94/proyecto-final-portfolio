@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="portfolio, web design, ux, ui, ux/ui design, project,portfolio">
     <meta name="author" content="Candela Fos Segarra">
-    <title>Proyectos</title>
+    <title>Proyecto</title>
 
     <!-- iconos de google -->
     <link rel="stylesheet"
@@ -17,21 +17,26 @@
 
 
     <!-- CSS -->
+    
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/proyectos/proyectos.css">
+    <link rel="stylesheet" href="./css/proyecto-individual/lightbox.css">
+    <link rel="stylesheet" href="./css/proyecto-individual/proyecto.css">
 
 
     <!-- JS -->
-    <script src="./js/proyectos/proyectos.js" defer></script>
+
     <script src="./js/botones.js" defer></script>
+   
+   
+    <script src="./js/proyecto/lightbox.js" defer></script>
+    <script src="./js/proyecto/acordeon.js" defer></script>
+
+
+
 
 </head>
-
-
-
-
 <body class="Body">
-   
+    
     <Header class="Header">
         <a href="./index.html" type="nav/index" title="logo"><svg width="50" height="80" viewBox="0 0 127 158" fill="none" xmlns="http://www.w3.org/2000/svg">
          <path d="M69.6259 34.1128C83.4811 33.713 95.7948 36.0589 109.287 41.7925L110.836 64.2588C96.6032 57.8262 85.184 55.2744 73.6679 55.6068C50.8158 56.2663 37.4832 68.5369 38.0545 88.3301C38.6154 107.763 53.0141 119.954 77.6656 119.243C90.2613 118.879 104.738 115.04 114.103 108.826L112.948 131.191C101.973 137.81 89.1058 141.243 72.9114 141.711C35.3043 142.796 11.3152 122.778 10.3544 89.4897C9.39886 56.3811 32.0188 35.1982 69.6259 34.1128Z" fill="var(--txt)"/>
@@ -119,68 +124,221 @@
  
      </Header>
 
+     <main class="Main">
+
+
+        <section class="Main-intro">
+
+            <div class="Main-introduccionMobile">
+                <div class="Main-imgLogo">
+        
+                    <img src="./imgs/portadas/portada-unavioska.png" alt="unavioska" class="Main-img">
+        
+                    <div class="Main-logoBoton">
+                       
+                       
+                    </div> 
+        
+                         <div class="Main-descripcion">
+                          
+                        </div>
+                 
+                   
+                </div>
+                </div>
+        
+        
+          <!-- ------------------------------ -->
+          <!--   INTRO VERSION DEKSTOP         -->
+          <!-- ------------------------------ -->
+        
+           <div class="Main-introDekstop">
+        
+        
+                    <div class="Main-textoImagenes">
+        
+        
+                        <div class="Main-texto">
+        
+                            <h1 class="Main-h1Dekstop">una vioska.</h1>
+                            <div class="Main-hastaghs">
+                                <h2 class="Main-h2Dekstop">#userexperience</h2>
+                                <h2 class="Main-h2Dekstop">#catalog</h2>
+                                <h2 class="Main-h2Dekstop">#ux/ui</h2>
+                            </div>
+        
+                        </div>
+        
+        
+                        <div class="Main-imagenes">
+                            <img src="./imgs/vioska/anillo-foto.png" alt="detalle 1" class="Main-imagenesIntro">
+                             <img src="./imgs/vioska/anillo-foto-2.jpg" alt="detalle 2" class="Main-imagenesIntro">
+                           
+                        </div>
+        
+        
+                    </div>
+        
+        
+        
+                    <div class="Main-imagenPrincipal">
+                       <img src="./imgs/portadas/portada-unavioska.png" alt="portada" class = "Main-imagenPpal">
+                      
+                        <img src="">
+                    </div>
+        
+        
+                </div>
+        
+        
+        
+        
+        
+          <section class="Main-content">
+              
+          <section class="Main-descripcion" id="Seccion-descripcion">
+               <h2 class="Main-h2">¿Qué es unavioska.?</h2>
+               <p class = "Main-descripcionP"> unavioska. es un taller de venta de bisutería de plata y macramé. Sus productos están hechos a mano, de manera artesanal</p>
+               <p class = "Main-descripcionP"> Este proyecto ha sido desarrollado a través de un buen proceso de investigación o mood board, entendiendo las necesidades y objetivos de la propietaria de la tienda.</p>
+                <p class = "Main-descripcionP"> unavioska. ha sido diseñada a través de Figma, haciendo uso de componentes, properties, variants y styles para hacer un diseño firme y rápido. Además en este proyecto también he realizado las fotografías de producto y su posterior edición. </p>
+                
+        
+            </section>
+        
+          <section class="Prototipado" id="Seccion-prototipado">
+                        <h2 class="Main-h2">Prototipado</h2>
+        
+                        <div class="Prototipado-imagenes">
+        
+            <img src="./imgs/vioska/anillos-dorados.jpg" alt="anillos dorados" class="Prototipado-img Lightbox-imgs">
+                           
+        
+            <img src="./imgs/vioska/cartel.jpg" alt="cartel" class="Prototipado-img Lightbox-imgs">
+        
+            <img src="/imgs/vioska/detalle-producto-2.jpg" alt="producto" class="Prototipado-img Lightbox-imgs">
+                          
+            <img src="/imgs/vioska/cartel-2.jpg" alt="cartel" class="Prototipado-img Lightbox-imgs">
+                      
+            <img src="/imgs/vioska/estrellas-madera.jpg" alt="estrellas" class="Prototipado-img Lightbox-imgs">
+            <img src="./imgs/vioska/anillos-macrame.webp" alt="portada anillos" class="Prototipado-img Lightbox-imgs">
+            <img src="./imgs/vioska/pendientes-luna.jpg" alt="luna" class="Prototipado-img Lightbox-imgs">
+        
+            <img src="./imgs/vioska/portada-unavioska.png" alt="portada" class="Prototipado-img Lightbox-imgs">
+        
+            <img src="./imgs/vioska/detalle-producto.jpg" alt="producto" class="Prototipado-img Lightbox-imgs">
+                      
+            <img src="./imgs/vioska/cosmos-portada.png" alt="cosmos" class="Prototipado-img Lightbox-imgs">
+        
+            <img src="./imgs/vioska/anillos-todos.png" alt="${proyecto.imagenes[11].alt}" class="Prototipado-img Lightbox-imgs">
+        
+            <img src="./imgs/vioska/colgantes-portada.png" alt="${proyecto.imagenes[12].alt}" class="Prototipado-img Lightbox-imgs">
+        
+        
+                        </div>
+        
+        
+        
+                            <div class="Div-lightbox ">
+                            <button class="Lightbox-close">
+                                <svg class="Onboarding-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                                  </svg>
+                            </button>
+                            <img  alt="imagenGrande" class="Lightbox-imagenGrande">
+                        </div>
+        
+        
+                    </section>
+                    
+        
+        
+        <section class="Main-contentDekstop">
+        
+                    <div class="Acordeon">
+        
+                     <section class="Acordeon-introduccionDekstop">
+        
+                              <div class="Acordeon-header">
+                              <h2 class="Acordeon-h2">¿Qué es unavioska.?</h2>
+                             </div>
+        
+                             <div class = "Acordeon-contenido Acordeon-descripcion">
+                             <p class = "Acordeon-descripcionP"> unavioska. es un taller de venta de bisutería de plata y macramé. Sus productos están hechos a mano, de manera artesanal</p>
+                             <p class = "Acordeon-descripcionP">Este proyecto ha sido desarrollado a través de un buen proceso de investigación o mood board, entendiendo las necesidades y objetivos de la propietaria de la tienda.</p>
+                            <p class = "Acordeon-descripcionP"> unavioska. ha sido diseñada a través de Figma, haciendo uso de componentes, properties, variants y styles para hacer un diseño firme y rápido. Además en este proyecto también he realizado las fotografías de producto y su posterior edición.</p>
+                            </div>
+          
+                    </section>
+        
+        
+                        <section class="Acordeon-prototipado">
+        
+        
+        
+        
+                            <div class="Acordeon-header">
+                                <h2 class="Acordeon-h2">Prototipado</h2>
+                            </div>
+        
+        
+            <div class="Acordeon-contenido">
+        
+        
+                <div class="Acordeon-prototipadoImagenes">
+        
+        
+                    <img src="./imgs/vioska/anillos-dorados.jpg" alt="anillos dorados" class="Prototipado-img Lightbox-imgs">
+                           
+        
+                    <img src="./imgs/vioska/cartel.jpg" alt="cartel" class="Acordeon-prototipadoImg Lightbox-imgs">
+                
+                    <img src="/imgs/vioska/detalle-producto-2.jpg" alt="producto" class="Acordeon-prototipadoImg Lightbox-imgs">
+                                  
+                    <img src="/imgs/vioska/cartel-2.jpg" alt="cartel" class="Acordeon-prototipadoImg Lightbox-imgs">
+                              
+                    <img src="/imgs/vioska/estrellas-madera.jpg" alt="estrellas" class="Acordeon-prototipadoImg Lightbox-imgs">
+                    <img src="./imgs/vioska/anillos-macrame.webp" alt="portada anillos" class="Acordeon-prototipadoImg Lightbox-imgs">
+                    <img src="./imgs/vioska/pendientes-luna.jpg" alt="luna" class="Acordeon-prototipadoImg Lightbox-imgs">
+                
+                    <img src="./imgs/vioska/portada-unavioska.png" alt="portada" class="Acordeon-prototipadoImg Lightbox-imgs">
+                
+                    <img src="./imgs/vioska/detalle-producto.jpg" alt="producto" class="Acordeon-prototipadoImg Lightbox-imgs">
+                              
+                    <img src="./imgs/vioska/cosmos-portada.png" alt="cosmos" class="Acordeon-prototipadoImg Lightbox-imgs">
+                
+                    <img src="./imgs/vioska/anillos-todos.png" alt="$anillos" class="Acordeon-prototipadoImg Lightbox-imgs">
+                
+                    <img src="./imgs/vioska/colgantes-portada.png" alt="portada" class="Acordeon-prototipadoImg Lightbox-imgs">
 
 
 
-
-
-
-    <main class="Main">
-
-
-
-        <!-- Proyectos version mobile -->
-
-
-        <h1 class="Main-h1">PROYECTOS</h1>
-
-
-        <div class="Main-proyectos">
-
-            <!-- Imágenes generadas con js -->
-
-
-        </div>
-
-
-
-
-
-        <div class="Main-proyectosDk">
-
-            <div class="Main-slider">
-                <!-- Imágenes generadas con Js -->
+              
+        
+                                   
+        
+                </div>
+        
+        
+        
             </div>
+        
+        
+        
+                         <div class="Div-lightbox ">
+                            <button class="Lightbox-close">
+                                <svg class="Onboarding-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                                  </svg>
+                            </button>
+                            <img  alt="imagenGrande" class="Lightbox-imagenGrande">
+                        </div>
+        
+                        </section>
 
 
-            <!-- Botones anterior-siguiente del slider -->
+     </main>
 
-            <div class="Slider-buttons">
-                <button class="Slider-button u-izq" id="btnAnt"><svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                        <path fill-rule="evenodd"
-                            d="M17 10a.75.75 0 0 1-.75.75H5.612l4.158 3.96a.75.75 0 1 1-1.04 1.08l-5.5-5.25a.75.75 0 0 1 0-1.08l5.5-5.25a.75.75 0 1 1 1.04 1.08L5.612 9.25H16.25A.75.75 0 0 1 17 10Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </button>
-
-
-                <button class="Slider-button u-der" id="btnSig"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
-                </button>
-            </div>
-
-
-
-        </div>
-
-
-
-    </main>
-
-    <footer class="Footer">
+     <footer class="Footer">
         <nav class="Footer-nav">
             <ul class="Footer-ul">
                 <li class="Footer-li"><a type="nav/inicio"  title="inicio" href="./index.html"><svg class="Footer-svg"
@@ -256,10 +414,5 @@
         </div>
     </footer>
 
-
-
-
-
 </body>
-
 </html>

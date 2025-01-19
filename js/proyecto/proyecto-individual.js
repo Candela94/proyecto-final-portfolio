@@ -14,6 +14,7 @@ const proyectos_con_onboarding = [
         metodologia:"Esta app ha sido diseñada bajo la metodología Design Thinking, haciendo un estudio previo de las necesidades del usuario para poder entenderlas y resolverlas.",
         programas:"Mattura ha sido diseñada con Figma, siguiendo la metodología de Design Systems, haciendo uso de components, variants y styles, para así hacer un diseño atractivo y consistente. Además, los productos de Mattura han sido diseñados con Midjourney generalmente, un programa que te permite generar imágenes con inteligencia artificial.",
         orientacion: "vertical",
+        logo:"./imgs/logos-svg/mattura.png",
 
 
         onboarding: [
@@ -72,6 +73,7 @@ const proyectos_con_onboarding = [
         metodologia:"Esta app ha sido diseñada bajo la metodología Design Thinking, haciendo un estudio previo de las necesidades del usuario para poder entenderlas y resolverlas.",
         programas:"Cocozone ha sido diseñada con Figma, siguiendo la metodología de Design Systems, haciendo uso de components, variants y styles, para así hacer un diseño atractivo y consistente.",
         orientacion: "vertical",
+        logo:"./imgs/logos-svg/coco.png",
 
 
 
@@ -130,8 +132,8 @@ const proyectos_con_onboarding = [
     //Proyecto unavioska
 
     {
-        id: 3,
-        h1: "unavioska",
+        id:3,
+        h1: "una vioska.",
         h2: "#catalog",
         descripcion: "unavioska. es una tienda local de artesanía que vende joyas de plata y de macramé.",
         metodologia:"",
@@ -188,6 +190,7 @@ const proyectos_con_onboarding = [
         metodologia:"Esta app ha sido diseñada bajo la metodología Design Thinking, haciendo un estudio previo de las necesidades del usuario para poder entenderlas y resolverlas.",
         programas:"Rutea ha sido diseñada con Figma, siguiendo la metodología de Design Systems, haciendo uso de components, variants y styles, para así hacer un diseño atractivo y consistente. Además, los productos de Mattura han sido diseñados con Midjourney generalmente, un programa que te permite generar imágenes con inteligencia artificial.",
         orientacion: "horizontal",
+        logo:"./imgs/logos-svg/rutea.png",
 
 
 
@@ -242,6 +245,7 @@ const proyectos_con_onboarding = [
         metodologia:"Esta app ha sido diseñada bajo la metodología Design Sprint (metodología Agile). En esta metodología, se ha seguido el proceso de diseño durante todas sus fases: Definir los objetivos de la app, investigación o moodboard, wireframes, iteraciones y entrega del proyecto.",
         programas:"Giftopia ha sido diseñada con Figma, siguiendo la metodología de Design Systems, haciendo uso de components, variants y styles, para así hacer un diseño atractivo y consistente. ",
         orientacion:"vertical",
+        logo:"./imgs/logos-svg/gifto.png",
 
 
         //Imagenes del proyecto
@@ -292,6 +296,7 @@ const proyectos_con_onboarding = [
 
 
 
+
 //2. Queremos obtener el ID del proyecto desde la URL 
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -321,7 +326,7 @@ function mostrarProyectos(proyecto){
             <img src='${proyecto.inicio[0].src}' alt='${proyecto.inicio[0].alt}' class="Main-img">
 
             <div class="Main-logoBoton">
-               
+               <img class = "Main-logo" src= "${proyecto.logo}" alt = "${proyecto.descripcion}">
                
             </div> 
 
@@ -396,22 +401,22 @@ function mostrarProyectos(proyecto){
     <h2 class="Main-h2">Onboarding</h2>
 
     <div class="Onboarding-imagenes">
-      <img src="${proyecto.onboarding[0].src}" alt="${proyecto.onboarding[0].alt}" class="Onboarding-img">
-      <img src="${proyecto.onboarding[1].src}" alt="${proyecto.onboarding[1].alt}" class="Onboarding-img">
-      <img src="${proyecto.onboarding[2].src}" alt="${proyecto.onboarding[2].alt}" class="Onboarding-img">
-      <img src="${proyecto.onboarding[3].src}" alt="${proyecto.onboarding[3].alt}" class="Onboarding-img">
+      <img src="${proyecto.onboarding[0].src}" alt="${proyecto.onboarding[0].alt}" class="Onboarding-img Lightbox-imgs">
+      <img src="${proyecto.onboarding[1].src}" alt="${proyecto.onboarding[1].alt}" class="Onboarding-img Lightbox-imgs">
+      <img src="${proyecto.onboarding[2].src}" alt="${proyecto.onboarding[2].alt}" class="Onboarding-img   Lightbox-imgs">
+      <img src="${proyecto.onboarding[3].src}" alt="${proyecto.onboarding[3].alt}" class="Onboarding-img Lightbox-imgs">
  </div>
 
 
-      <div class="Onboarding-lightbox ">
-                    <button class="Onboarding-close">
+                <div class="Div-lightbox ">
+                    <button class="Lightbox-close">
                         <svg class="Onboarding-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
                           </svg>
                     </button>
-                    <img  alt="imagenGrande" class="Onboarding-imagenGrande">
+                    <img  alt="imagenGrande" class="Lightbox-imagenGrande">
                 </div>
-            </section>
+     </section>
 
 
   <section class="Prototipado" id="Seccion-prototipado">
@@ -420,39 +425,46 @@ function mostrarProyectos(proyecto){
                 <div class="Prototipado-imagenes">
 
 
-    <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img Lightbox-imgs">
                    
 
-     <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Prototipado-img">
+     <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Prototipado-img Lightbox-imgs">
 
-    <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Prototipado-img Lightbox-imgs">
                   
-    <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Prototipado-img Lightbox-imgs">
               
-    <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Prototipado-img">
-    <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Prototipado-img">
-    <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Prototipado-img Lightbox-imgs">
+    <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Prototipado-img Lightbox-imgs">
+    <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Prototipado-img Lightbox-imgs">
 
-    <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Prototipado-img Lightbox-imgs">
 
-    <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Prototipado-img Lightbox-imgs">
               
-    <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Prototipado-img Lightbox-imgs">
 
-    <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Prototipado-img Lightbox-imgs">
 
-    <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Prototipado-img">
-
-
-
-
-
+    <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Prototipado-img Lightbox-imgs">
 
 
 
 
                 </div>
-            </section>
+
+
+
+
+                        <div class="Div-lightbox ">
+                    <button class="Lightbox-close">
+                        <svg class="Onboarding-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                          </svg>
+                    </button>
+                    <img  alt="imagenGrande" class="Lightbox-imagenGrande">
+                </div>
+</section>
             
   
 
@@ -486,15 +498,25 @@ function mostrarProyectos(proyecto){
                     <div class="Acordeon-contenido">
 
                         <div class="Acordeon-onboardingImagenes ">
-                                <img src="${proyecto.onboarding[0].src}" alt="${proyecto.onboarding[0].alt}" class="Acordeon-onboardingImg">
-                                <img src="${proyecto.onboarding[1].src}" alt="${proyecto.onboarding[1].alt}" class="Acordeon-onboardingImg">
-                                <img src="${proyecto.onboarding[2].src}" alt="${proyecto.onboarding[2].alt}" class="Acordeon-onboardingImg">
-                                <img src="${proyecto.onboarding[3].src}" alt="${proyecto.onboarding[3].alt}" class="Acordeon-onboardingImg">
+                                <img src="${proyecto.onboarding[0].src}" alt="${proyecto.onboarding[0].alt}" class="Acordeon-onboardingImg Lightbox-imgs">
+                                <img src="${proyecto.onboarding[1].src} Lightbox-imgs" alt="${proyecto.onboarding[1].alt}" class="Acordeon-onboardingImg Lightbox-imgs">
+                                <img src="${proyecto.onboarding[2].src} Lightbox-imgs" alt="${proyecto.onboarding[2].alt}" class="Acordeon-onboardingImg Lightbox-imgs">
+                                <img src="${proyecto.onboarding[3].src}" alt="${proyecto.onboarding[3].alt}" class="Acordeon-onboardingImg Lightbox-imgs">
                             
 
                         </div>
                     </div>
 
+
+
+               <div class="Div-lightbox ">
+                    <button class="Lightbox-close">
+                        <svg class="Onboarding-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                          </svg>
+                    </button>
+                    <img  alt="imagenGrande" class="Lightbox-imagenGrande">
+                </div>
 
                 </section>
 
@@ -515,28 +537,28 @@ function mostrarProyectos(proyecto){
         <div class="Acordeon-prototipadoImagenes">
 
 
-        <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img">
+        <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img Lightbox-imgs">
                    
 
-        <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
 
-        <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
                   
-        <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
               
-        <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Acordeon-prototipadoImg">
-        <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Acordeon-prototipadoImg">
-        <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
+        <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
+        <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
 
-        <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
 
-        <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
               
-        <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
 
         <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Acordeon-prototipadoImg">
 
-        <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
 
                            
 
@@ -545,6 +567,17 @@ function mostrarProyectos(proyecto){
 
 
     </div>
+
+
+          <div class="Div-lightbox ">
+                    <button class="Lightbox-close">
+                        <svg class="Onboarding-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                          </svg>
+                    </button>
+                    <img  alt="imagenGrande" class="Lightbox-imagenGrande">
+                </div>
+
 
                 </section>
 
@@ -572,7 +605,6 @@ function mostrarProyectos(proyecto){
     
                             `
                             }
-
 
 
 
@@ -666,31 +698,44 @@ function mostrarProyectosSinOnboarding(proyecto){
 
                 <div class="Prototipado-imagenes">
 
-    <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img Lightbox-imgs">
                    
 
-    <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Prototipado-img Lightbox-imgs">
 
-    <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Prototipado-img Lightbox-imgs">
                   
-    <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Prototipado-img Lightbox-imgs">
               
-    <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Prototipado-img">
-    <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Prototipado-img">
-    <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Prototipado-img Lightbox-imgs">
+    <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Prototipado-img Lightbox-imgs">
+    <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Prototipado-img Lightbox-imgs">
 
-    <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Prototipado-img Lightbox-imgs">
 
-    <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Prototipado-img Lightbox-imgs">
               
-    <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Prototipado-img Lightbox-imgs">
 
-    <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Prototipado-img Lightbox-imgs">
 
-    // <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Prototipado-img">
+    <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Prototipado-img Lightbox-imgs">
 
 
                 </div>
+
+
+
+                    <div class="Div-lightbox ">
+                    <button class="Lightbox-close">
+                        <svg class="Onboarding-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                          </svg>
+                    </button>
+                    <img  alt="imagenGrande" class="Lightbox-imagenGrande">
+                </div>
+
+
             </section>
             
 
@@ -730,28 +775,28 @@ function mostrarProyectosSinOnboarding(proyecto){
         <div class="Acordeon-prototipadoImagenes">
 
 
-        <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img">
+        <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
                    
 
-        <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
 
-        <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
                   
-        <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
               
-        <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Acordeon-prototipadoImg">
-        <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Acordeon-prototipadoImg">
-        <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
+        <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
+        <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
 
-        <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
 
-        <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
               
-        <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
 
-        <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
 
-        <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Acordeon-prototipadoImg">
+        <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Acordeon-prototipadoImg Lightbox-imgs">
 
                            
 
@@ -761,12 +806,22 @@ function mostrarProyectosSinOnboarding(proyecto){
 
     </div>
 
+
+
+                 <div class="Div-lightbox ">
+                    <button class="Lightbox-close">
+                        <svg class="Onboarding-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                          </svg>
+                    </button>
+                    <img  alt="imagenGrande" class="Lightbox-imagenGrande">
+                </div>
+
                 </section>
 
 
 `;
 }
-
 
 
 
@@ -859,31 +914,44 @@ function mostrarProyectoDekstop(proyecto) {
   
                   <div class="Prototipado-imagenes">
   
-      <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img">
+      <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img Lightbox-imgs">
                      
   
-      <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Prototipado-img">
+      <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Prototipado-img Lightbox-imgs">
   
-      <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Prototipado-img">
+      <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Prototipado-img Lightbox-imgs">
                     
-      <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Prototipado-img">
+      <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Prototipado-img Lightbox-imgs">
                 
-      <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Prototipado-img">
-      <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Prototipado-img">
-      <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Prototipado-img">
+      <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Prototipado-img Lightbox-imgs">
+      <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Prototipado-img Lightbox-imgs">
+      <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Prototipado-img Lightbox-imgs">
   
-      <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Prototipado-img">
+      <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Prototipado-img Lightbox-imgs">
   
-      <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Prototipado-img">
+      <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Prototipado-img Lightbox-imgs">
                 
-      <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Prototipado-img">
+      <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Prototipado-img Lightbox-imgs">
   
-      <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Prototipado-img">
+      <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Prototipado-img Lightbox-imgs">
   
-      <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Prototipado-img">
+      <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Prototipado-img Lightbox-imgs">
   
   
                   </div>
+
+
+
+                      <div class="Div-lightbox ">
+                    <button class="Lightbox-close">
+                        <svg class="Onboarding-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                          </svg>
+                    </button>
+                    <img  alt="imagenGrande" class="Lightbox-imagenGrande">
+                </div>
+
+
               </section>
               
   
@@ -935,28 +1003,28 @@ function mostrarProyectoDekstop(proyecto) {
           <div class="Acordeon-prototipadoImagenesHorizontal">
   
   
-          <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Acordeon-imgHorizontal">
+          <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Acordeon-imgHorizontal Lightbox-imgs">
                      
   
-          <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Acordeon-imgHorizontal">
+          <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Acordeon-imgHorizontal Lightbox-imgs">
   
-          <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Acordeon-imgHorizontal">
+          <img src="${proyecto.imagenes[2].src}" alt="${proyecto.imagenes[2].alt}" class="Acordeon-imgHorizontal Lightbox-imgs">
                     
-          <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Acordeon-imgHorizontal">
+          <img src="${proyecto.imagenes[4].src}" alt="${proyecto.imagenes[4].alt}" class="Acordeon-imgHorizontal Lightbox-imgs">
                 
-          <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Acordeon-imgHorizontal">
-          <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Acordeon-imgHorizontal">
-          <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Acordeon-imgHorizontal">
+          <img src="${proyecto.imagenes[5].src}" alt="${proyecto.imagenes[5].alt}" class="Acordeon-imgHorizontal Lightbox-imgs">
+          <img src="${proyecto.imagenes[6].src}" alt="${proyecto.imagenes[6].alt}" class="Acordeon-imgHorizontal Lightbox-imgs">
+          <img src="${proyecto.imagenes[7].src}" alt="${proyecto.imagenes[7].alt}" class="Acordeon-imgHorizontal Lightbox-imgs">
   
-          <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Acordeon-imgHorizontal">
+          <img src="${proyecto.imagenes[8].src}" alt="${proyecto.imagenes[8].alt}" class="Acordeon-imgHorizontal Lightbox-imgs">
   
-          <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Acordeon-imgHorizontal">
+          <img src="${proyecto.imagenes[9].src}" alt="${proyecto.imagenes[9].alt}" class="Acordeon-imgHorizontal Lightbox-imgs">
                 
-          <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Acordeon-imgHorizontal">
+          <img src="${proyecto.imagenes[10].src}" alt="${proyecto.imagenes[10].alt}" class="Acordeon-imgHorizontal Lightbox-imgs">
   
-          <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Acordeon-imgHorizontal">
+          <img src="${proyecto.imagenes[11].src}" alt="${proyecto.imagenes[11].alt}" class="Acordeon-imgHorizontal Lightbox-imgs">
   
-          <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Acordeon-imgHorizontal">
+          <img src="${proyecto.imagenes[12].src}" alt="${proyecto.imagenes[12].alt}" class="Acordeon-imgHorizontal Lightbox-imgs">
   
                              
   
@@ -966,6 +1034,16 @@ function mostrarProyectoDekstop(proyecto) {
   
       </div>
   
+
+
+          <div class="Div-lightbox ">
+                    <button class="Lightbox-close">
+                        <svg class="Onboarding-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                          </svg>
+                    </button>
+                    <img  alt="imagenGrande" class="Lightbox-imagenGrande">
+                </div>
                   </section>
   
   
@@ -974,10 +1052,6 @@ function mostrarProyectoDekstop(proyecto) {
 
 
 }
-
-
-
-
 
 
 
@@ -995,7 +1069,9 @@ if(proyecto.orientacion === "horizontal") {
 
     mostrarProyectos(proyecto);
 } else {
+
     mostrarProyectosSinOnboarding(proyecto);
+
 }
 
 

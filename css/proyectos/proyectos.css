@@ -29,9 +29,19 @@
 
 .Main-card {
     position: relative;
+    transition: transform 0.5s ease;
+    cursor: pointer;
 
 
 }
+
+
+.Main-card:active{
+    transform: scale(0.8);
+}
+
+
+
 
 .Main-img {
 
@@ -83,12 +93,12 @@
 
 
 
+.Main-cardTitulo{
 
-.Main-logoCard {
+    font-family: mattone-regular;
+    font-size: 20px;
 
-    width: 100px;
 }
-
 
 
 
@@ -334,34 +344,34 @@
     /*  clases animación slider          */
     /* --------------------------------- */
 
-@keyframes deslizar-salida {
+/* @keyframes deslizar-salida {
 
     from{
         transform: translateX(0);
         /* opacity: 1; */
-    }
+    /* } */
 
-    to{
-        transform: translateX(-30%);
+    /* to{
+        transform: translateX(-100%); */
         /* opacity: 0; */
-    }
-    
-}
+    /* } */
+
+/* } */
 
 
 
 
 
-@keyframes deslizar-entrada {
+/* @keyframes deslizar-entrada {
 
     from{
-        transform: translateX(100%);
-        /* opacity: 0; */
+        transform: translateX(-100%);
+       
     }
 
     to{
-        transform: translateX(0);
-        /* opacity: 1; */
+        transform: translateX(0%);
+       
     }
     
 }
@@ -373,7 +383,6 @@
 
 .Main-card.entrar{
     animation: deslizar-entrada 0.5s forwards;
-}
-
+} */
 
 }

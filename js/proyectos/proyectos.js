@@ -8,17 +8,17 @@
 const proyectos = [
 
 
-    { title: "Mattura", description: "Mattura", alt: "Mattura", file:"imgs/portadas/mattura-portada.png" , logo: "Mattura", description: "e-commerce, sostenibilidad", url: "http://127.0.0.1:5500/proyecto-individual.html?id=1" },
+    { title: "Mattura", description: "Mattura", alt: "Mattura", file:"imgs/portadas/mattura-portada.png" , logo: "Mattura",  url: "http://127.0.0.1:5500/proyecto-individual.html?id=1" },
 
-    { title: "Rutea", description: "Rutea", alt: "Rutea", file: "imgs/portadas/portada-rutea.png", logo: "Rutea", description: "imagen 2", url: "http://127.0.0.1:5500/proyecto-individual.html?id=5" },
+    { title: "Rutea", description: "Rutea", alt: "Rutea", file: "imgs/portadas/portada-rutea.png", logo: "Rutea",  url: "http://127.0.0.1:5500/proyecto-individual.html?id=5" },
 
-    { title: "unavioska.", description: "unavioska.", alt: "unavioska.", file:"imgs/portadas/portada-unavioska.png" , logo: "unavioska.", description: "imagen 3", url: "http://127.0.0.1:5500/proyecto-individual.html?id=3" },
+    { title: "unavioska.", description: "unavioska.", alt: "una vioska.", file:"imgs/portadas/portada-unavioska.png" , logo: "unavioska.",  url: "./vioska.html" },
 
     
 
-    { title: "cocoZone", description: "cocoZone", alt: "cocoZone", file:"imgs/portadas/cocos-portada.jpg" , logo: "cocozone", description: "imagen 4", url: "http://127.0.0.1:5500/proyecto-individual.html?id=2" },
+    { title: "cocoZone", description: "cocoZone", alt: "cocoZone", file:"imgs/portadas/cocos-portada.jpg" , logo: "cocozone",  url: "http://127.0.0.1:5500/proyecto-individual.html?id=2" },
 
-    { title: "Giftopia", description: "Giftopia", alt: "Giftopia", file:"imgs/portadas/portada-giftopia.png" , logo: "Giftopia", description: "imagen 5", url: "http://127.0.0.1:5500/proyecto-individual.html?id=4" },
+    { title: "Giftopia", description: "Giftopia", alt: "Giftopia", file:"imgs/portadas/portada-giftopia.png" , logo: "Giftopia", url: "http://127.0.0.1:5500/proyecto-individual.html?id=4" },
 
 ];
 
@@ -59,22 +59,21 @@ function mostrarCardsMobile() {
 
     // Recorremos el array para escoger todos los objetos que lo componen 
     proyectos.forEach(proyecto => {
-        const { file, description, logo, url } = proyecto;
+        const { file, alt, logo, url } = proyecto;
 
 
         const cardMobile = document.createElement('div');
         cardMobile.classList.add('Main-card')
 
         cardMobile.innerHTML = `
-                                    <img class = "Main-img" src = "${file}" alt = "${description}">
+                                  <a href = "${url}" type = "proyectos navegacion" title= "proyectos"><img class = "Main-img" src = "${file}" alt = "${alt}"></a>
 
                                     <div class="Main-infoProyectos">
-                                     <img class= "Main-logoCard" src="${logo}" alt = "${description}">
-                                     
+                                    <p class= "Main-cardTitulo"> ${logo}</p>
 
-                                      <div class="Main-cardButton"><a href = "${url}">Ver proyecto</a>
+                                      <div class="Main-cardButton"><a href = "${url}" type = "proyectos navegacion" title= "proyectos"> Ver proyecto</a>>
                                    
-                                          </div>
+                                    </div>
                     </div>
                     
 
@@ -126,10 +125,7 @@ function mostrarCards() {
                         
                         <img src = "${proyecto.file}" alt = "${proyecto.alt}" class= "Card-img">
 
-                         <div class="card-info">
-                        <h3 class="card-title">${proyecto.title}</h3>
-                        <p class="card-p">${proyecto.description}</p>
-                    </div>
+                        
 
         `
 

@@ -4,13 +4,15 @@
 
 //1. Definimos constantes y variables 
 
-const imgList = document.querySelectorAll(".Onboarding-img");
+const imgList = document.querySelectorAll(".Lightbox-imgs"); 
 
-const lightbox = document.querySelector(".Onboarding-lightbox")
 
-const imagenLightbox = document.querySelector(".Onboarding-imagenGrande");
 
-const closeBtn = document.querySelector(".Onboarding-close");
+const lightbox = document.querySelector(".Div-lightbox")
+
+const imagenLightbox = document.querySelector(".Lightbox-imagenGrande");
+
+const closeBtn = document.querySelector(".Lightbox-close");
 
 
 

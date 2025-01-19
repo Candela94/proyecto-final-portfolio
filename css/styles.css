@@ -16,7 +16,7 @@ h1 {
 
 .Body {
 
-    font-family: poppins;
+    font-family: poppins,khula;
     display: flex;
     flex-direction: column;
 
@@ -26,6 +26,7 @@ h1 {
 
 
 }
+
 
 
 
@@ -51,6 +52,9 @@ a {
     --txt: #2E2E2E;
     --txt-secondary: #515151;
 
+    --txt-footer:#2E2E2E;
+    --txt-header: #2E2E2E;
+
 
 
 }
@@ -73,8 +77,10 @@ a {
     --terciary: #2E2E2E;
 
     --txt: #2E2E2E;
-    --txt-secondary:#fcf9f1;
+    --txt-secondary:#2E2E2E;
 
+    --txt-footer:#2E2E2E;
+    --txt-header: #2E2E2E;
 
 
 
@@ -89,10 +95,13 @@ a {
 .u-ruteaMode {
 
     --primary: #222222;
-    --secondary: #EA8615;
-    --terciary: #EA8615;
+    --secondary: #efaa5a;
+  
     --txt: rgba(242, 239, 234, 0.8);
     --txt-secondary: #222222;
+
+    --txt-footer:#222222;
+    --txt-header: rgba(242, 239, 234, 0.8);
 
 
 
@@ -107,9 +116,12 @@ a {
 .u-pinkMode {
     --primary: #F3D2E4;
     --secondary: #B6355B;
-    --terciary: #B6355B;
+  
     --txt: #2E2E2E;
     --txt-secondary: #FAF0F5;
+    --txt-footer:#F3D2E4;
+    --txt-header: #2E2E2E;
+
 
 }
 
@@ -122,10 +134,12 @@ a {
 
     --primary: #fcf9f1;
     --secondary: #33332D;
-    --terciary: #33332D;
+    
     --txt: #33332D;
-    --txt-secondary: #fcf9f1;
-
+    --txt-secondary: #33332D;
+    
+    --txt-footer:#fcf9f1;
+    --txt-header: #33332D;
 }
 
 
@@ -134,8 +148,10 @@ a {
     --primary: #454344;
     --secondary: #5BF7DF;
     --terciary: #F22D97;
-    --txt: #454344;
+    --txt: rgba(242, 239, 234, 0.8);
     --txt-secondary: rgba(242, 239, 234, 0.8);
+    --txt-footer:#454344;
+    --txt-header: rgba(242, 239, 234, 0.8);
 }
 
 
@@ -189,7 +205,7 @@ a {
     justify-content: space-between;
     padding: 0.5rem 2rem;
     /* background-color: var(--secondary); */
-    color: var(--txt-secondary);
+    color: var(--txt-header);
     background: var(--primary);
     border-bottom: 3px solid var(--secondary);
     border-radius: 0 0 0 50px;
@@ -200,6 +216,19 @@ a {
 
 }
 
+#btnMenu{
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+}
+
+#btnMenu:active{
+
+    transform: scale(0.8);
+
+}
+
+
+
 
 
 .Header-navDekstop {
@@ -207,11 +236,18 @@ a {
 }
 
 
+.Header svg{
 
+    width: 40px;
+    transition: transform 0.3s ease;
 
-.Logo {
-    width: 26px;
 }
+
+
+.Header svg:active{
+    transform: scale(0.8);
+}
+
 
 .Header-ul {
     display: flex;
@@ -243,9 +279,9 @@ a {
 
     font-family: poppins;
     padding: 0.5rem;
-    border-radius: 8px;
-    border: 2px solid var(--txt);
-    color: var(--txt);
+    border-radius: 20px;
+    border: 2px solid var(--txt-header);
+    color: var(--txt-header);
     background: none;
 
     cursor: pointer;
@@ -376,9 +412,14 @@ a {
 
 .Footer-svg {
     width: 32px;
-    color: var(--primary);
+    color: var(--txt-footer);
+    transition: transform 0.3s ease;
 }
 
+
+.Footer-svg:active{
+    transform: scale(0.8);
+}
 
 
 
@@ -422,7 +463,7 @@ a {
     }
 
 .Footer-navDekstop{
-    color: var(--primary);
+   
 }
 
 
@@ -472,10 +513,10 @@ a {
 
     .Header-navDekstop {
         display: flex;
-        justify-content: space-between;
+      
         align-items: center;
-        width: 100%;
-        gap: 2rem;
+     
+        gap: 7rem;
 
 
     }
@@ -485,7 +526,7 @@ a {
 
     .Header-ulDekstop {
         display: flex;
-        justify-content: center;
+        justify-content: end;
         width: 100%;
         gap: 6rem;
         font-family: mattone-regular;
@@ -548,6 +589,8 @@ a {
     .Header-icons {
         display: flex;
         align-items: center;
+        width: 100%;
+        justify-content: end;
         gap: 28px;
     }
 
@@ -596,6 +639,7 @@ a {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+        color: var(--txt-footer);
     }
 
 
@@ -623,6 +667,7 @@ a {
 
     .Footer-desplegar {
         width: 28px;
+        color: var(--txt-footer);
     }
 
 

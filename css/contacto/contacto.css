@@ -1,14 +1,6 @@
 
 
 
-h1 {
-    font-family: mattone-black;
-    font-size: 3rem;
-    color: var(--txt);
-    word-wrap: break-word;
-    letter-spacing: 2px;
-
-}
 
 input{
     all: unset;
@@ -26,7 +18,7 @@ textarea{
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
-    align-items: center;
+  
     width: 100%;
     height: 90vh;
     flex-wrap: wrap;

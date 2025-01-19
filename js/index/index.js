@@ -12,8 +12,10 @@ const lista_imagenes = [
     
     
     {file: "./imgs/slider-imgs/coco-slider.png", descripcion: "cocos" },
+
+    {file: "./imgs/slider-imgs/gifto.png", descripcion: "cocos" },
     
-    {file: "./imgs/slider-imgs/giftopia-slider.png", descripcion: "giftopia" },
+
     
     
     ];

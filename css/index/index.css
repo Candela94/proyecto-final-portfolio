@@ -1,12 +1,6 @@
 
 
-.Body{
-    font-family: poppins, khula;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--primary);
-   
-}
+
 
 
 
@@ -39,7 +33,7 @@
     
     font-size: 2.7rem;
     word-wrap: break-word;
-    color: var(--primary);
+    color: var(--txt-footer);
 
 }
 
@@ -108,10 +102,10 @@
 }
 
 .Main-linea{
-    height: 2px;
+    height: 3px;
     border-radius: 8px;
 
-    width: 50%;
+    width: 30%;
     background-color: var(--secondary);
 }
 

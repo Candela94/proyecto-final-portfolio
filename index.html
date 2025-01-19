@@ -23,8 +23,8 @@
 
 
     <!-- JS -->
-    <script src="./js/botones.js" defer></script>
     <script src="./js/index/index.js" defer></script>
+    <script src="./js/botones.js" defer></script>
 
 </head>
 
@@ -36,12 +36,13 @@
 
 
 
-    <!-- --------------- -->
-    <!--     Header     -->
-    <!-- --------------- -->
+    <!--------------->
+    <!--  Header  -->
+    <!--------------->
 
+   
     <Header class="Header">
-        <a href="./index.html" type="nav-index"><svg width="50" height="80" viewBox="0 0 127 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a href="./index.html" type="nav/index" title="logo"><svg width="50" height="80" viewBox="0 0 127 158" fill="none" xmlns="http://www.w3.org/2000/svg">
          <path d="M69.6259 34.1128C83.4811 33.713 95.7948 36.0589 109.287 41.7925L110.836 64.2588C96.6032 57.8262 85.184 55.2744 73.6679 55.6068C50.8158 56.2663 37.4832 68.5369 38.0545 88.3301C38.6154 107.763 53.0141 119.954 77.6656 119.243C90.2613 118.879 104.738 115.04 114.103 108.826L112.948 131.191C101.973 137.81 89.1058 141.243 72.9114 141.711C35.3043 142.796 11.3152 122.778 10.3544 89.4897C9.39886 56.3811 32.0188 35.1982 69.6259 34.1128Z" fill="var(--txt)"/>
          <g clip-path="url(#clip0_2021_418)">
          <path d="M72.1409 122.072C68.2751 122.04 65.1622 119.481 65.1932 115.744C65.2062 114.187 65.8601 112.506 67.0092 111.414L69.9425 108.624C71.4343 107.206 72.2852 104.701 72.302 102.679C72.2852 104.701 73.0963 107.22 74.5644 108.662L77.4529 111.501C78.5817 112.613 79.2077 114.304 79.1947 115.86C79.1637 119.598 76.0088 122.104 72.1429 122.072L72.1409 122.072ZM72.1409 122.072C63.0292 121.997 55.6919 115.865 55.7687 106.617C55.8007 102.767 57.3449 98.4041 60.0514 95.7037L66.973 88.7958C70.4863 85.2831 72.4979 79.078 72.5395 74.0739C72.4979 79.078 74.4062 85.3177 77.8627 88.8863L84.6666 95.9081C87.3279 98.653 88.7995 103.041 88.7676 106.891C88.6908 116.139 81.2546 122.148 72.1409 122.072Z" stroke="var(--txt)" stroke-width="4.54167"/>
@@ -53,7 +54,28 @@
          </defs>
          </svg>
              </a>
+
+
+             <!-- Menú desplegable -->
  
+         <div class="Header-menu">
+             <nav class="Header-menuNav">
+                 <ul class="Header-ulMenu">
+                     
+                         <li class="Header-liMenu"><a href="https://www.behance.net/candelasegarra" target="_blank" type="nav/behance" title="behance"><i
+                                     class="fa-brands fa-behance"></i></a></li>
+     
+                         <li class="Header-liMenu"><a href="https://www.linkedin.com/in/candela-fos-segarra-4b78b92b7/"
+                                 target="_blank" type="nav/linkedin" title="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+ 
+                         <li class="Header-liMenu"><a href="./about.html" type="nav/header" title="about">About</a></li>
+                         
+     
+                     </ul>
+                
+                
+             </nav>
+         </div>
  
          <!-- Menú navegación mobile -->
          <nav class="Header-nav">
@@ -61,7 +83,7 @@
  
                  <li class="Header-li"> <button class="Main-modeButton modeButton" id="modeButton">
                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                             stroke="currentColor" class="size-6">
+                             stroke="var(--txt)" class="size-6">
                              <path stroke-linecap="round" stroke-linejoin="round"
                                  d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
                          </svg>
@@ -79,27 +101,23 @@
          <nav class="Header-navDekstop">
  
              <ul class="Header-ulDekstop">
-                 <li class="Header-liDekstop"><a href="./about.html"  type="nav-about">About</a></li>
-                 <li class="Header-liDekstop"><a href="./proyectos.html" type="nav-proyecto" >Proyectos</a></li>
-                 <li class="Header-liDekstop"><a href="./contacto.html" type="nav-contacto" >Contacto</a></li>
+                 <li class="Header-liDekstop"><a href="./about.html"  type="nav/about" title="about">About</a></li>
+                 <li class="Header-liDekstop"><a href="./proyectos.html" type="nav/proyecto" title="proyectos" >Proyectos</a></li>
+                 <li class="Header-liDekstop"><a href="./contacto.html" type="nav/contacto"  title="contacto">Contacto</a></li>
              </ul>
  
              <div class="Header-icons">
                  <ul class="Header-ulIcons">
-                     <li class="Header-liIcons"><a href="https://www.behance.net/candelasegarra" target="_blank" type="nav-behance"><i
+                     <li class="Header-liIcons"><a href="https://www.behance.net/candelasegarra" target="_blank" type="nav/behance" title="behance"><i
                                  class="fa-brands fa-behance"></i></a></li>
  
                      <li class="Header-liIcons"><a href="https://www.linkedin.com/in/candela-fos-segarra-4b78b92b7/"
-                             target="_blank" type="nav-linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                             target="_blank" type="nav/linkedin" title="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
  
                  </ul>
                  <div class="Main-modeButtonDiv">
                      <button class="Main-modeButton modeButton" id="modeButtonDekstop">
-                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                             stroke="currentColor" class="size-6">
-                             <path stroke-linecap="round" stroke-linejoin="round"
-                                 d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-                         </svg>
+                        ¡Cambia mi modo!
  
                      </button>
                  </div>
@@ -109,6 +127,7 @@
         
  
      </Header>
+
 
 
 
@@ -161,24 +180,24 @@
     <footer class="Footer">
         <nav class="Footer-nav">
             <ul class="Footer-ul">
-                <li class="Footer-li"><a type="navegacion" href="./index.html"><svg class="Footer-svg"
+                <li class="Footer-li"><a type="nav/inicio"  title="inicio" href="./index.html"><svg class="Footer-svg"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="var(--txt)" class="size-6">
+                            stroke="var(--txt-footer)" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                         </svg></a>
                 </li>
-                </li>
-                <li class="Footer-li"><a type="navegacion" href="./proyectos.html"><svg class="Footer-svg" width="28"
+                
+                <li class="Footer-li"><a type="nav/proyectos" title="proyectos" href="./proyectos.html"><svg class="Footer-svg" width="28"
                             height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M6.72849 22.379C9.97449 25.625 14.1935 26.5975 16.2675 26.797C16.877 26.867 17.217 26.492 17.2635 26.1055C17.3105 25.6955 17.0525 25.25 16.467 25.168C14.592 24.91 10.713 24.0665 7.90049 21.219C3.30649 16.6135 2.43949 9.6525 6.18949 5.9025C9.23649 2.8675 14.3105 3.254 18.049 5.2695L19.2675 4.086C14.7205 1.3555 8.60349 1.133 5.01749 4.7305C0.751994 9.008 1.31449 16.965 6.72849 22.379ZM23.9085 5.7735L24.8455 4.836C25.2905 4.391 25.3145 3.7345 24.8575 3.3125L24.5525 3.0315C24.1545 2.6565 23.533 2.668 23.0995 3.078L22.174 4.0275L23.9085 5.7735ZM12.5295 17.1285L23.0525 6.617L21.3065 4.883L10.795 15.383L9.82249 17.621C9.72849 17.867 9.97449 18.1135 10.2325 18.031L12.5295 17.1285ZM10.9945 18.875C14.826 22.707 20.99 24.219 24.4355 20.785C27.248 17.961 26.8845 12.945 23.873 8.633L22.678 9.828C25.068 13.367 25.537 17.34 23.2635 19.613C20.4985 22.379 15.9275 21.0665 12.787 18.1015L10.9945 18.875Z"
-                                fill="var(--txt)" />
+                                fill="var(--txt-footer)" />
                         </svg></a>
                 </li>
-                <li class="Footer-li"><a href="./contacto.html"><svg class="Footer-svg"
+                <li class="Footer-li"><a href="./contacto.html" type="nav/contacto" title="contacto"><svg class="Footer-svg"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="var(--txt)" class="size-6">
+                            stroke="var(--txt-footer)" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
                         </svg></a>
@@ -189,7 +208,7 @@
 
         <div class="Footer-boton" id="Footer-btn">
             <svg class="Footer-desplegar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="var(--txt)" class="size-6">
+                stroke-width="1.5" stroke="var(--txt-footer)" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
             </svg>
 
@@ -201,21 +220,21 @@
             <nav class="Footer-navDekstop">
                 <div class="Footer-secciones">
                     <ul class="Footer-ulDekstop">
-                        <li class="Footer-liDekstop"><a href="./index.html" type="nav-header">Inicio</a></li>
-                        <li class="Footer-liDekstop"><a href="./about.html" type="nav-header">About</a></li>
-                        <li class="Footer-liDekstop"><a href="./proyectos.html" type="nav-header">Proyectos</a></li>
-                        <li class="Footer-liDekstop"><a href="./proyecto-individual.html" type="nav-header">Contacto</a></li>
+                        <li class="Footer-liDekstop"><a href="./index.html" type="nav/header" title="inicio">Inicio</a></li>
+                        <li class="Footer-liDekstop"><a href="./about.html" type="nav/header" title="about">About</a></li>
+                        <li class="Footer-liDekstop"><a href="./proyectos.html" type="nav/header" title="proyectos">Proyectos</a></li>
+                        <li class="Footer-liDekstop"><a href="./proyecto-individual.html" type="nav/header" title="contacto">Contacto</a></li>
                     </ul>
                 </div>
 
                 <div class="Footer-proyectos">
                     <ul class="Footer-ulDekstop">
 
-                        <li class="Footer-liProyectos"><a href="http://127.0.0.1:5500/proyecto-individual.html?id=1" type="nav-proyecto1">Mattura</a></li>
-                        <li class="Footer-liProyectos"><a href="http://127.0.0.1:5500/proyecto-individual.html?id=5" type="nav-proyecto2">Rutea</a></li>
-                        <li class="Footer-liProyectos"><a href="http://127.0.0.1:5500/proyecto-individual.html?id=3" type="nav-proyecto3">unavioska.</a></li>
-                        <li class="Footer-liProyectos"><a href="http://127.0.0.1:5500/proyecto-individual.html?id=2" type="nav-proyecto4">cocozone.</a></li>
-                        <li class="Footer-liProyectos"><a href="http://127.0.0.1:5500/proyecto-individual.html?id=4" type="nav-proyecto5">Giftopia</a></li>
+                        <li class="Footer-liProyectos"><a href="http://127.0.0.1:5500/proyecto-individual.html?id=1" type="nav/proyecto1" title="mattura">Mattura</a></li>
+                        <li class="Footer-liProyectos"><a href="http://127.0.0.1:5500/proyecto-individual.html?id=5" type="nav/proyecto2" title="rutea">Rutea</a></li>
+                        <li class="Footer-liProyectos"><a href="./vioska.html" type="nav/proyecto3" title="vioska">unavioska.</a></li>
+                        <li class="Footer-liProyectos"><a href="http://127.0.0.1:5500/proyecto-individual.html?id=2" type="nav/proyecto4" title="coco">cocozone.</a></li>
+                        <li class="Footer-liProyectos"><a href="http://127.0.0.1:5500/proyecto-individual.html?id=4" type="nav/proyecto5" title="giftopia">Giftopia</a></li>
 
                     </ul>
                 </div>
@@ -223,8 +242,8 @@
                 <div class="Footer-rrss">
                     <ul class="Footer-ulDekstop">
 
-                        <li class="Footer-liRrss"><a href="https://www.linkedin.com/in/candela-fos-segarra-4b78b92b7/" type="nav-rrss" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li class="Footer-liRrss"><a href="https://www.behance.net/candelasegarra" type="nav-rrss" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+                        <li class="Footer-liRrss"><a href="https://www.linkedin.com/in/candela-fos-segarra-4b78b92b7/" type="nav/rrss" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li class="Footer-liRrss"><a href="https://www.behance.net/candelasegarra" type="nav/rrss" target="_blank" title="behance"><i class="fa-brands fa-behance"></i></a></li>
 
 
                     </ul>
@@ -233,8 +252,6 @@
             </nav>
         </div>
     </footer>
-
-
 
 
 </body>
