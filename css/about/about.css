@@ -202,7 +202,10 @@ opacity: 1;
 
 @media screen and (min-width:1024px) {
 
-
+.Main{
+    padding: 1rem;
+    
+}
 
     .Acordeon{
 flex-direction: row;
