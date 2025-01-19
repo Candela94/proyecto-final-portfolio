@@ -12,7 +12,7 @@ const proyectos = [
 
     { title: "Rutea", description: "Rutea", alt: "Rutea", file: "imgs/portadas/portada-rutea.png", logo: "Rutea",  url: "http://127.0.0.1:5500/proyecto-individual.html?id=5" },
 
-    { title: "unavioska.", description: "unavioska.", alt: "una vioska.", file:"imgs/portadas/portada-unavioska.png" , logo: "unavioska.",  url: "./vioska.html" },
+    { title: "una vioska.", description: "una vioska.", alt: "una vioska.", file:"imgs/portadas/portada-unavioska.png" , logo: "una vioska.",  url: "./vioska.html" },
 
     
 
