@@ -576,7 +576,12 @@ backdrop-filter: blur(10);
         object-fit: cover;
 
         border-radius: 8px;
+        transition: transform .5s ease;
 
+    }
+
+    .Acordeon-prototipadoImg:hover{
+        transform: scale(1.1);
     }
 
 

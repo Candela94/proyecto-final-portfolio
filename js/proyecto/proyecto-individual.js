@@ -68,7 +68,7 @@ const proyectos_con_onboarding = [
     {
         id: 2,
         h1: "cocozone",
-        h2: "userexperiencie,gaming,UX/UI design",
+        h2: "#gaming",
         descripcion: "Cocozone es una app en la que puedes comprar, vender y alquilar videojuegos. Además, puedes jugar online con otrxs jugadorxs y, si te unes a la comunidad, puedes recibir novedades especiales y noticias sobre los distintos eventos gaming.",
         metodologia:"Esta app ha sido diseñada bajo la metodología Design Thinking, haciendo un estudio previo de las necesidades del usuario para poder entenderlas y resolverlas.",
         programas:"Cocozone ha sido diseñada con Figma, siguiendo la metodología de Design Systems, haciendo uso de components, variants y styles, para así hacer un diseño atractivo y consistente.",
@@ -377,7 +377,7 @@ function mostrarProyectos(proyecto){
             <div class="Main-imagenPrincipal">
                <img src="${proyecto.inicio[0].src}" alt="${proyecto.inicio[0].alt}" loading="lazy" class = "Main-imagenPpal">
             
-                <img src="${proyecto.logo}" class= "Main-logoPrincipal" loading="lazy">
+              
             </div>
 
 
@@ -543,7 +543,7 @@ function mostrarProyectos(proyecto){
         <div class="Acordeon-prototipadoImagenes">
 
 
-        <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Prototipado-img Lightbox-imgs" loading="lazy">
+        <img src="${proyecto.imagenes[0].src}" alt="${proyecto.imagenes[0].alt}" class="Acordeon-prototipadoImg Lightbox-imgs" loading="lazy">
                    
 
         <img src="${proyecto.imagenes[1].src}" alt="${proyecto.imagenes[1].alt}" class="Acordeon-prototipadoImg Lightbox-imgs" loading="lazy">
