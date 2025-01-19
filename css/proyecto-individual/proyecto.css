@@ -161,11 +161,6 @@
 
 
 
-
-
-
-/* -------------------------------- */
-
 .Onboarding-imagenes {
     display: flex;
     justify-content: center;
@@ -291,8 +286,6 @@ backdrop-filter: blur(10);
     height: 300px;
 
 
-
-
     overflow: hidden;
     overflow-y: scroll;
 
@@ -332,15 +325,6 @@ backdrop-filter: blur(10);
 
 
 
-.Video {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.Video-video {
-    width: 200px;
-}
 
 
 

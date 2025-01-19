@@ -316,11 +316,11 @@
 
     .Slider-buttons {
         display: flex;
-        justify-content: end;
+        justify-content: center;
         padding: 1rem;
         padding-bottom: 1rem;
-        border-bottom: solid 1px var(--txt);
-        gap: 3em;
+       
+        gap: 9em;
     }
 
 
@@ -330,11 +330,17 @@
         cursor: pointer;
         padding: 0.5rem;
         border-radius: 20px;
-        border: solid 0.3px;
+        border: none;
+        transition: transform 0.3s ease;
+    }
+
+    .Slider-button:active{
+
+        transform: scale(0.7);
     }
 
     .Slider-button svg {
-        width: 24px;
+        width: 26px;
     }
 
 
