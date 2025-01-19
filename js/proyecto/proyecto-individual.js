@@ -542,8 +542,6 @@ function mostrarProyectos(proyecto){
 
 
 
-
-
 //Función para mostrar los proyectos que tienen orientación horizontal
 
 function mostrarProyectoDekstop(proyecto) {

@@ -135,7 +135,7 @@
 
 
 
-.Onboarding,
+
 .Prototipado,
 .Video {
     display: flex;
@@ -150,7 +150,7 @@
 }
 
 
-.Onboarding-imagenes, .Prototipado-imagenes{
+.Prototipado-imagenes{
     border: 3px solid var(--txt);
     padding: 1em;
     background-color: var(--secondary);
@@ -161,20 +161,11 @@
 
 
 
-.Onboarding-imagenes {
-    display: flex;
-    justify-content: center;
-    gap: 0.5em;
-    
-   
-
-    
-}
 
 
 
 
-.Div-lightbox{
+/* .Div-lightbox{
     width: 100%;
     opacity: 0;
     max-height: 0;
@@ -198,31 +189,7 @@ backdrop-filter: blur(10);
 
 
 
-}
-
-
-
-
-
-/* Lightbox para imagenes Onboarding */
-
-
-.Onboarding-img {
-    width: 22%;
-    border-radius: 6px;
-    transition: transform .5s ease;
-    cursor: pointer;
-
-}
-
-.Onboarding-img:hover{
-    transform: scale(0.95);
-}
-
-.Onboarding-img:active{
-   
-    transform: scale(1.1);
-}
+} */
 
 
 
@@ -230,18 +197,22 @@ backdrop-filter: blur(10);
 
 
 
+
+
+
+/* 
 .Div-lightbox.isActive .Lightbox-imagenGrande{
    width: 50%;
    border-radius: 6px;
   
-}
+} */
 
 
 
 
 
 
-
+/* 
 .Lightbox-close{
     
     border: 2px solid var(--txt-footer);
@@ -269,7 +240,7 @@ backdrop-filter: blur(10);
     height:auto;
     box-shadow: 0 0 2rem 0 rgba(0, 0, 0, .4);
 
-}
+} */
 
 
 
@@ -507,30 +478,6 @@ backdrop-filter: blur(10);
 
     }
 
-
-
-    .Acordeon-onboardingImagenes {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-       
-        margin-top: 1.5rem;
-        gap: 8px;
-       
-    }
-
-    .Acordeon-onboardingImg {
-        position: relative;
-        width: 200px;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: transform .5s ease;
-    }
-
-
-    .Acordeon-onboardingImg:hover{
-        transform: scale(1.1);
-    }
     
 
 
